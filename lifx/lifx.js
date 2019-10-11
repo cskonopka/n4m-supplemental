@@ -6,6 +6,9 @@ const Max = require("max-api");
 var lifx = require('lifx-http-api'),
     client;
 
+const dotenv_module = require("dotenv");
+dotenv_module.config();
+
 function anypost(str) {
     if (Max) {
         Max.post(str);
@@ -13,8 +16,9 @@ function anypost(str) {
         console.log(str);
     }
 }
+
 client = new lifx({
-    bearerToken: 'c9bf5a78f4c0055f273cfa0188d50bd4df5eda246132c34b7eb3d5083ecc449d'
+    bearerToken: "c53b13b4d5b745772f41a1cfe86f60dacf703c50a788cd9831ad47090a54fd6e"
 });
 
 const bodyParser = require("body-parser");
@@ -60,6 +64,16 @@ Max.addHandler("listLights", () => {
     });
 });
 
+Max.addHandler("getID", () => {
+    client.listLights('all', function (err, data) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        anypost(data[0].id);
+    });
+});
+
 Max.addHandler("setState", (...elements) => {
     anypost(elements);
     var combo = elements[1] + ' saturation:' + elements[2];
@@ -81,7 +95,7 @@ Max.addHandler("setState", (...elements) => {
 
 
 Max.addHandler("cycle", () => {
-    
+
     client.cycle('all', {
         "states": [{
             "brightness": 1.0
@@ -102,7 +116,7 @@ Max.addHandler("cycle", () => {
             console.error(err);
             return;
         }
-     
+
         console.log(data)
     });
 });
