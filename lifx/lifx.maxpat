@@ -47,7 +47,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 942.650005757808685, 214.000006914138794, 145.250023007392883, 90.0 ],
-					"presentation_linecount" : 3,
 					"text" : "getID\n\nGet the id of a light",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -136,7 +135,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 679.450036287307739, 719.833327174186707, 193.499953985214233, 153.0 ],
-					"presentation_linecount" : 8,
 					"text" : "color: '#5ED173',\nfrom_color: '#E36FDD',\nperiod: 10,\ncycles: 10,\npersist: true,\npower_on: true,\npeak: 0.8",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -166,7 +164,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1256.899982750415802, 490.866670668125153, 155.900007486343384, 111.0 ],
-					"presentation_linecount" : 5,
 					"text" : "    power: 'on',\n    color: 'blue saturation:0.5',\n    brightness: 0.5,\n    duration: 5\t",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -233,7 +230,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 917.399982750415802, 848.116670668125153, 59.0, 24.0 ],
-					"presentation_linecount" : 2,
 					"text" : "s to_Lifx"
 				}
 
@@ -248,7 +244,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.300005376338959, 488.616670668125153, 543.100007474422455, 90.0 ],
-					"presentation_linecount" : 5,
 					"text" : "breathe\n\nPerforms a breathe effect by slowly fading between the given colors. Use the parameters to tweak the effect.",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -264,7 +259,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 682.200013697147369, 488.616670668125153, 187.900007486343384, 153.0 ],
-					"presentation_linecount" : 7,
 					"text" : "color: '#006633',\nfrom_color: '#00AF33',\nperiod: 1,\ncycles: 10,\npersist: true,\npower_on: true,\npeak: 0.8",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -308,7 +302,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.300005376338959, 719.833327174186707, 543.100007474422455, 90.0 ],
-					"presentation_linecount" : 7,
 					"text" : "pulse\n\nPerforms a pulse effect by quickly flashing between the given colors. Use the parameters to tweak the effect.",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -324,7 +317,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 917.399982750415802, 488.616670668125153, 228.0, 69.0 ],
-					"presentation_linecount" : 3,
 					"text" : "setState\n\nSets the state of the lights",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -391,7 +383,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1126.399984002113342, 662.616670668125153, 76.5, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "brightness",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -746,8 +737,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1103,6 +1092,8 @@
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 32.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1112,9 +1103,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-,
-					"fontsize" : [ 32.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
