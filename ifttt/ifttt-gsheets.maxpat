@@ -196,14 +196,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 43.300005376338959, 150.400000929832458, 155.0, 27.0 ],
+					"patching_rect" : [ 43.300005376338959, 150.400000929832458, 195.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script ifttt.js"
+					"text" : "node.script ifttt-gsheets.js"
 				}
 
 			}
@@ -255,7 +257,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ifttt.js",
+				"name" : "ifttt-gsheets.js",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/ifttt",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
@@ -291,6 +293,8 @@
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 32.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -300,9 +304,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-,
-					"fontsize" : [ 32.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",

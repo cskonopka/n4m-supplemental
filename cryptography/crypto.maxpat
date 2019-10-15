@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1376.0, 711.0 ],
+		"rect" : [ 59.0, 104.0, 853.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-2",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.0, 25.0, 135.0, 22.0 ],
-					"text" : "encrypt Hello from Max!"
+					"patching_rect" : [ 510.300005376338959, 111.0, 320.0, 40.0 ],
+					"presentation_linecount" : 3,
+					"text" : "encrypt \"Hello from Max!\"",
+					"textjustification" : 1
 				}
 
 			}
@@ -181,8 +185,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -195,6 +197,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 519.800005376338959, 159.700000464916229, 60.800005376338959, 159.700000464916229 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -225,13 +235,6 @@
 					"destination" : [ "obj-65", 1 ],
 					"midpoints" : [ 60.800005376338959, 198.200003921985626, 134.800005376338959, 198.200003921985626 ],
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}
