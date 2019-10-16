@@ -64,6 +64,17 @@ Max.addHandler("listLights", () => {
     });
 });
 
+Max.addHandler("powerDown", () => {
+    client.togglePower('all', 1.5, function (err, data) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+
+        console.log(data)
+    });
+});
+
 Max.addHandler("getID", () => {
     client.listLights('all', function (err, data) {
         if (err) {
@@ -148,28 +159,6 @@ Max.addHandler("breathe", (...elements) => {
 });
 
 
-Max.addHandler("breatheDemo", (...elements) => {
-    anypost(elements);
-    client.breathe('all', {
-        color: '#006633',
-        from_color: '#00AF33',
-        period: 1,
-        cycles: 10,
-        persist: true,
-        power_on: true,
-        peak: 0.8
-    }, function (err, data) {
-        if (err) {
-            console.error(err);
-            return;
-        }
-        anypost(data);
-    });
-});
-
-
-
-
 Max.addHandler("pulse", (...elements) => {
     anypost(elements);
     // Using callbacks
@@ -178,8 +167,8 @@ Max.addHandler("pulse", (...elements) => {
         from_color: elements[1],
         period: elements[2],
         cycles: elements[3],
-        persist: elements[4],
-        power_on: elements[5],
+        persist: true,
+        power_on: true,
         peak: elements[6]
         // color: '#006633',
         // from_color: '#00AF33',
@@ -198,44 +187,7 @@ Max.addHandler("pulse", (...elements) => {
     });
 });
 
-
-Max.addHandler("lifx", (...elements) => {
-    // elements will be an array of the remaining elements of the list.
-
-    var array = [];
-    for (let i = 0; i < elements.length; i++) {
-        array.push(elements[i]);
-    }
-    anypost(array[2]);
-    anypost(array.length);
-
-
-    // maxAPI.outlet(calendars);
-});
-
 app.listen(3000, function () {
     anypost("Example app listening on port 3000!");
     if (Max) Max.outlet("ready");
 });
-
-// When node.script gets the symbol "text", the remainder will be passed to this function.
-// The "..." is the spread operator. All of the arguments to this function will go into args as an array.
-// maxAPI.addHandler("text", (...args) => {
-
-// 	//    console.log("This will be called for ALL messages");
-//     // console.log(`The following inlet event was ${!handled ? "not " : "" }handled`);
-//     // console.log(args);
-// console.log(args.length);   
-//     // The outlet function sends the arguments right back to Max. Hence, echo.
-//     // maxAPI.outlet(args.length);
-//     // ${JSON.stringify(dict)}
-// });
-
-// const sender = function (a, b, c) {
-//     ws.send(JSON.stringify({
-//         "value_1": a,
-//         "value_2": b,
-//         "value_3": c
-//     }));
-// };
-

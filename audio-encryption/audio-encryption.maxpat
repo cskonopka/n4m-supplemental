@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 654.0, 265.0, 150.0, 20.0 ],
+					"text" : "153526"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 384.700013697147369, 468.0, 372.0, 40.0 ],
+					"presentation_linecount" : 2,
+					"text" : "script npm i audio-buffer-from",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-4",
@@ -46,7 +73,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 222.700013697147369, 516.0, 274.0, 40.0 ],
+					"patching_rect" : [ 384.700013697147369, 426.0, 274.0, 40.0 ],
 					"text" : "script npm install wav",
 					"textjustification" : 1
 				}
@@ -91,8 +118,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.300005376338959, 36.0, 140.0, 40.0 ],
-					"text" : "randomCat",
+					"patching_rect" : [ 526.300005376338959, 36.0, 100.0, 40.0 ],
+					"text" : "encrypt",
 					"textjustification" : 1
 				}
 
@@ -225,7 +252,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 51.300005376338959, 169.400000929832458, 172.0, 27.0 ],
+					"patching_rect" : [ 51.300005376338959, 169.400000929832458, 224.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -234,7 +261,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script ascii-cats.js"
+					"text" : "node.script audio-encryption.js"
 				}
 
 			}
@@ -304,11 +331,18 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ascii-cats.js",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/ascii-cats",
-				"patcherrelativepath" : "../ascii-cats",
+				"name" : "audio-encryption.js",
+				"bootpath" : "~/Documents/_REPO/n4m-supplemental/audio-encryption",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
