@@ -18,7 +18,7 @@ function anypost(str) {
 }
 
 client = new lifx({
-    bearerToken: "c53b13b4d5b745772f41a1cfe86f60dacf703c50a788cd9831ad47090a54fd6e"
+    bearerToken: ""
 });
 
 const bodyParser = require("body-parser");
