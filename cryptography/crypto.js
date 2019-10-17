@@ -15,24 +15,22 @@ function anypost(str) {
     }
 }
 
-Max.addHandler("encrypt", (string) => {
-    var hw = encrypt(string);
+Max.addHandler("decrypt", () => {
+    // var hw = encrypt(string);
+    // anypost(hw);
+    var dede = `{"iv" : "b65e807e9a35c168793850619c509a09", "encryptedData" : "b28e8765fb0eb08ba034fb8fc00bea3b"}`;
+    var hw = anypost(decrypt(dede));
     anypost(hw);
-
-
-    setTimeout(function () {
-        //your code to be executed after 1 second
-        anypost(decrypt(hw));
-    }, delayInMilliseconds);
+    
 });
 
 
-function encrypt(text) {
-    let cipher = crypto.createCipheriv(algorithm, Buffer.from(key), iv);
-    let encrypted = cipher.update(text);
-    encrypted = Buffer.concat([encrypted, cipher.final()]);
-    return { iv: iv.toString('hex'), encryptedData: encrypted.toString('hex') };
-}
+// function encrypt(text) {
+//     let cipher = crypto.createCipheriv(algorithm, Buffer.from(key), iv);
+//     let encrypted = cipher.update(text);
+//     encrypted = Buffer.concat([encrypted, cipher.final()]);
+//     return { iv: iv.toString('hex'), encryptedData: encrypted.toString('hex') };
+// }
 
 
 function decrypt(text) {
