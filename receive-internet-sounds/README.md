@@ -27,6 +27,17 @@ The *receive-internet-sounds* project leverages the *file-upload* examples from 
  ```bash
  http://de751217.ngrok.io
  ```
+ - Open *index.ejs* file. (views > index.js)
+ - Within the *form* tag, replace the *localhost* address with the ngrok *http* url within the *action* attribute. 
+ ``` javascript
+      <form ref='uploadForm' id='uploadForm' action='PASTE_NGROK_HTTP_URL_HERE/upload' method='post'
+        encType="multipart/form-data">
+        <input type="file" name="sampleFile" />
+        <br /><br />
+        <input type='submit' value='Upload!' />
+      </form>
+ ```
+ 
  - Open a web browser and go to the *http* url.
  - Find and upload a *.wav* file using the prompt on the web page.
  - Wait a few moments.
