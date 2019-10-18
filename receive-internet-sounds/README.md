@@ -30,7 +30,8 @@ The *receive-internet-sounds* project leverages the *file-upload* examples from 
  - Open *index.ejs* file. (views > index.js)
  - Within the *form* tag, replace the *localhost* address with the ngrok *http* url within the *action* attribute. 
  ``` html
- <form ref='uploadForm' id='uploadForm' action='PASTE_NGROK_HTTP_URL_HERE/upload' method='post' encType="multipart/form-data">
+ <form ref='uploadForm' id='uploadForm' action='PASTE_NGROK_HTTP_URL_HERE/upload' method='post' 
+       encType="multipart/form-data">
    <input type="file" name="sampleFile" />
    <br /><br />
    <input type='submit' value='Upload!' />
