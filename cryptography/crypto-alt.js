@@ -1,7 +1,5 @@
 // adapted from https://codeforgeek.com/encrypt-and-decrypt-data-in-node-js/
-
 const Max = require("max-api");
-var fs = require("fs");
 const crypto = require('crypto');
 const algorithm = 'aes-256-cbc';
 const key = crypto.randomBytes(32);
@@ -19,18 +17,10 @@ function anypost(str) {
 var passer = new Object;
 Max.addHandler("encrypt", (string) => {
     var hw = encrypt(string);
-    let data = JSON.stringify(hw, null, 2);
-    anypost("encrypted message -> " + data);
-    fs.writeFile('encryptedPhrase.json', data, (err) => {
-        if (err) throw err;
-        anypost('*** encrypted file created ***');
-    });
-});
-
-Max.addHandler("decrypt", (filenamestring) => {
-    let rawdata = fs.readFileSync(filenamestring);
-    let incomingFile = JSON.parse(rawdata);
-    anypost("decrypted message -> " + decrypt(incomingFile));
+    anypost(hw);
+    setTimeout(function () {
+        anypost(decrypt(hw));
+    }, delayInMilliseconds);
 });
 
 function encrypt(text) {

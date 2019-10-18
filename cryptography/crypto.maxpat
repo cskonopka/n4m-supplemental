@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 853.0, 711.0 ],
+		"rect" : [ 34.0, 79.0, 861.0, 693.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,80 +39,15 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
 					"id" : "obj-10",
-					"maxclass" : "newobj",
+					"linecount" : 4,
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.0, 553.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 394.0, 529.0, 53.0, 22.0 ],
-					"text" : "prepend"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 190.0, 599.0, 397.0, 22.0 ],
-					"text" : "encryptedData b28e8765fb0eb08ba034fb8fc00bea3b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 449.0, 485.0, 55.0, 23.0 ],
-					"text" : "dict.iter"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 185.0, 432.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 288.0, 457.0, 50.5, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "dict test"
+					"patching_rect" : [ 418.999960124492645, 15.0, 420.0, 132.0 ],
+					"text" : "1) Install the \"crypto\" library\n2) Start the Node-for-Max script\n3) Encrypt the demo message\n4) Decrypt the demo message"
 				}
 
 			}
@@ -120,14 +55,69 @@
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
-					"id" : "obj-1",
+					"id" : "obj-57",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.399982750415802, 15.0, 399.0, 163.0 ],
+					"presentation_linecount" : 5,
+					"text" : "crypto\n\nCreate an encrypted .json message and decrypt the encrypted .json message"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.399982750415802, 323.0, 33.0, 38.0 ],
+					"text" : "4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-55",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.399982750415802, 279.0, 33.0, 38.0 ],
+					"text" : "3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-54",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.300005376338959, 62.0, 87.0, 32.0 ],
-					"text" : "decrypt",
+					"patching_rect" : [ 93.899982750415802, 323.0, 270.0, 40.0 ],
+					"text" : "encryptedPhrase.json",
 					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 93.899982750415802, 367.0, 125.0, 27.0 ],
+					"text" : "prepend decrypt"
 				}
 
 			}
@@ -140,7 +130,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.300005376338959, 111.0, 320.0, 32.0 ],
+					"patching_rect" : [ 68.899982750415802, 279.0, 320.0, 40.0 ],
 					"text" : "encrypt \"Hello from Max!\"",
 					"textjustification" : 1
 				}
@@ -154,7 +144,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.800005376338959, 111.0, 33.0, 30.0 ],
+					"patching_rect" : [ 15.399982750415802, 227.0, 33.0, 38.0 ],
 					"text" : "2"
 				}
 
@@ -167,21 +157,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.800005376338959, 68.0, 33.0, 30.0 ],
+					"patching_rect" : [ 15.399982750415802, 184.0, 33.0, 38.0 ],
 					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 32.0,
-					"id" : "obj-59",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 51.300005376338959, 28.0, 103.0, 38.0 ],
-					"text" : "Setup"
 				}
 
 			}
@@ -194,7 +171,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 68.0, 361.0, 32.0 ],
+					"patching_rect" : [ 53.899982750415802, 184.0, 457.0, 40.0 ],
 					"text" : "script npm install crypto --save -g",
 					"textjustification" : 1
 				}
@@ -215,7 +192,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 224.200013697147369, 201.000006914138794, 400.0, 220.0 ],
+					"patching_rect" : [ 187.799991071224213, 437.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -229,7 +206,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 216.000006914138794, 93.0, 32.0 ],
+					"patching_rect" : [ 53.899982750415802, 437.0, 93.0, 40.0 ],
 					"text" : "ready",
 					"textjustification" : 1
 				}
@@ -244,7 +221,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.300005376338959, 111.0, 149.0, 32.0 ],
+					"patching_rect" : [ 225.899982750415802, 227.0, 149.0, 40.0 ],
 					"text" : "script stop",
 					"textjustification" : 1
 				}
@@ -259,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 111.0, 155.0, 32.0 ],
+					"patching_rect" : [ 68.899982750415802, 227.0, 155.0, 40.0 ],
 					"text" : "script start",
 					"textjustification" : 1
 				}
@@ -274,12 +251,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 51.300005376338959, 169.400000929832458, 133.0, 22.0 ],
+					"patching_rect" : [ 53.899982750415802, 407.400000929832458, 153.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -291,13 +266,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -305,22 +273,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 519.800005376338959, 159.700000464916229, 60.800005376338959, 159.700000464916229 ],
+					"midpoints" : [ 78.399982750415802, 330.0, 63.399982750415802, 330.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 368.800005376338959, 158.0, 60.800005376338959, 158.0 ],
+					"midpoints" : [ 235.399982750415802, 273.700000464916229, 63.399982750415802, 273.700000464916229 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -328,6 +289,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 78.399982750415802, 275.0, 63.399982750415802, 275.0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -342,38 +304,30 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 1 ],
-					"midpoints" : [ 60.800005376338959, 198.200003921985626, 134.800005376338959, 198.200003921985626 ],
+					"midpoints" : [ 63.399982750415802, 436.0, 137.399982750415802, 436.0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
-					"source" : [ "obj-38", 0 ]
+					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 103.399982750415802, 400.0, 63.399982750415802, 400.0 ],
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"order" : 0,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-54", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "crypto.js",
-				"bootpath" : "~/Documents/_airReam/n4m-supplemental/cryptography",
+				"bootpath" : "~/Documents/_REPO/n4m-supplemental/cryptography",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -402,7 +356,6 @@
 				"name" : "light",
 				"default" : 				{
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 32.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -412,7 +365,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-
+,
+					"fontsize" : [ 32.0 ]
 				}
 ,
 				"parentstyle" : "",
