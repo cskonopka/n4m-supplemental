@@ -16,7 +16,7 @@ The *lifx* patches demonstrate how to control an individual LIFX smart bulb usin
 client = new lifx({
     bearerToken: "YOUR_LIFX_KEY_HERE"
 });
-``
+```
 - Open the file *lifx-core.maxpat*.
 - Click *script npm install lifx-http-api --save* to install the library.
 - Click *script start*.
