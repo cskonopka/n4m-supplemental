@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1852.0, 1087.0 ],
+		"rect" : [ 34.0, 79.0, 1551.0, 998.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,545 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-145",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 83.300005376338959, 376.833327174186707, 33.0, 38.0 ],
+					"text" : "3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-10",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 926.399982750415802, 165.0, 420.0, 101.0 ],
+					"presentation_linecount" : 3,
+					"text" : "1) Install the \"lifx-http-api- library\n2) Start the Node-for-Max script\n3) Change some colors"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1238.291630028596956, 565.833327174186707, 67.0, 27.0 ],
+					"presentation_linecount" : 2,
+					"text" : "s to_Lifx"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1238.291630028596956, 306.333327114582062, 68.0, 68.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"id" : "obj-124",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1425.491634189001161, 380.333327114582062, 78.5, 22.0 ],
+					"text" : "saturation",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"id" : "obj-125",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1470.291630028596956, 439.333327114582062, 62.5, 22.0 ],
+					"text" : "duration",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"id" : "obj-126",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1447.291631280294496, 409.333327114582062, 76.5, 22.0 ],
+					"text" : "brightness",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"id" : "obj-127",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1456.791631280294496, 342.833327114582062, 67.0, 22.0 ],
+					"text" : "color",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"id" : "obj-128",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1456.791631280294496, 308.833327114582062, 69.0, 22.0 ],
+					"text" : "power",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-129",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1363.791630028596956, 306.333327114582062, 42.0, 27.0 ],
+					"text" : "off"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-130",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1324.291630028596956, 306.333327114582062, 36.0, 27.0 ],
+					"text" : "on"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-131",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1414.791630863061982, 340.333327114582062, 39.0, 27.0 ],
+					"text" : "blue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-133",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1363.791630028596956, 340.333327114582062, 49.0, 27.0 ],
+					"text" : "green"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-134",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1411.791630028596956, 436.833327114582062, 58.0, 27.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"format" : 6,
+					"id" : "obj-135",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1389.791631280294496, 406.833327114582062, 56.0, 27.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"format" : 6,
+					"id" : "obj-136",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1368.291630028596956, 377.833327114582062, 56.0, 27.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-137",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1324.291630028596956, 340.333327114582062, 38.0, 27.0 ],
+					"text" : "red"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-138",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1324.291630028596956, 504.233324885368347, 131.0, 27.0 ],
+					"text" : "prepend setState"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-139",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1324.291630028596956, 475.233324885368347, 107.0, 27.0 ],
+					"text" : "pak s s 0. 0. 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-140",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1238.291630028596956, 538.833327174186707, 225.0, 27.0 ],
+					"text" : "setState off green 0.02 0. 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-92",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 975.991716383806306, 515.49999475479126, 178.0, 27.0 ],
+					"presentation_linecount" : 2,
+					"text" : "setState on blue 0.3 1. 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-89",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 959.016661702505189, 486.49999475479126, 189.0, 27.0 ],
+					"presentation_linecount" : 2,
+					"text" : "setState on green 0.3 1. 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-37",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 944.041607021204072, 460.49999475479126, 172.0, 27.0 ],
+					"presentation_linecount" : 2,
+					"text" : "setState on red 0.3 1. 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-36",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 903.291630028596956, 373.833327114582062, 168.0, 27.0 ],
+					"text" : "setState on blue 1. 1. 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 915.041607021204072, 402.833327114582062, 178.0, 27.0 ],
+					"presentation_linecount" : 2,
+					"text" : "setState on green 1. 1. 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-34",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 928.266661702505189, 431.833327114582062, 161.0, 27.0 ],
+					"text" : "setState on red 1. 1. 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-61",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 83.300005376338959, 59.0, 33.0, 38.0 ],
+					"text" : "2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-60",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.800005376338959, 15.0, 33.0, 38.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 516.0, 59.0, 66.0, 27.0 ],
+					"text" : "r to_Lifx"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 53.300005376338959, 15.0, 457.0, 40.0 ],
+					"text" : "script npm install lifx-http-api --save",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-5",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "n4m.monitor.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 152.200013697147369, 150.000006914138794, 400.0, 220.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-65",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 53.300005376338959, 150.000006914138794, 93.0, 40.0 ],
+					"text" : "ready",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-30",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 361.300005376338959, 59.0, 149.0, 40.0 ],
+					"text" : "script stop",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 113.300005376338959, 59.0, 155.0, 40.0 ],
+					"text" : "script start",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 53.300005376338959, 114.400000929832458, 130.0, 27.0 ],
+					"saved_object_attributes" : 					{
+						"autostart" : 0,
+						"defer" : 0,
+						"watch" : 0
+					}
+,
+					"text" : "node.script lifx.js"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"id" : "obj-26",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 743.499974429607391, 447.333327174186707, 69.0, 22.0 ],
+					"text" : "duration",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 16.0,
+					"id" : "obj-23",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 573.499974429607391, 296.833327174186707, 297.250023007392883, 132.0 ],
+					"presentation_linecount" : 10,
+					"text" : "togglePower\n\nTurn off lights if they are on, or turn them on if they are off. Physically powered off lights are ignored.",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1043.633337318897247, 464.666674494743347, 68.0, 68.0 ]
+					"patching_rect" : [ 573.499974429607391, 444.833327174186707, 79.0, 79.0 ]
 				}
 
 			}
@@ -56,11 +588,13 @@
 					"format" : 6,
 					"id" : "obj-19",
 					"maxclass" : "flonum",
+					"maximum" : 100.0,
+					"minimum" : 0.1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1176.000035047531128, 385.33334481716156, 61.0, 27.0 ]
+					"patching_rect" : [ 667.499974429607391, 444.833327174186707, 61.0, 27.0 ]
 				}
 
 			}
@@ -73,22 +607,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1133.166629492155153, 468.000013947486877, 138.0, 27.0 ],
-					"text" : "pak powerDown 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1747.199986934661865, 624.900006353855133, 225.0, 27.0 ],
-					"text" : "setState on green 0.31 1. 9"
+					"patching_rect" : [ 667.499974429607391, 478.833327174186707, 145.0, 27.0 ],
+					"text" : "pak togglePower 0."
 				}
 
 			}
@@ -100,7 +620,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1043.633337318897247, 625.966669976711273, 67.0, 27.0 ],
+					"patching_rect" : [ 573.499974429607391, 565.833327174186707, 67.0, 27.0 ],
 					"text" : "s to_Lifx"
 				}
 
@@ -114,7 +634,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1003.399982750415802, 16.0, 409.0, 132.0 ],
+					"patching_rect" : [ 926.399982750415802, 15.0, 399.0, 132.0 ],
 					"text" : "lifx-core\n\nA sandbox for testing LIFX bulb functionality with Node-for-Max."
 				}
 
@@ -128,8 +648,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1043.633337318897247, 558.333341598510742, 226.333334445953369, 40.0 ],
-					"text" : "powerDown 0.55",
+					"patching_rect" : [ 573.499974429607391, 525.833327174186707, 239.0, 40.0 ],
+					"text" : "togglePower 2.",
 					"textjustification" : 1
 				}
 
@@ -146,7 +666,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 575.666629492155153, 943.199998795986176, 58.0, 27.0 ]
+					"patching_rect" : [ 598.749999597127953, 777.491674840450287, 58.0, 27.0 ]
 				}
 
 			}
@@ -157,7 +677,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 633.416629492155153, 1003.699998795986176, 133.25, 22.0 ],
+					"patching_rect" : [ 656.499999597127953, 837.991674840450287, 118.25, 22.0 ],
 					"text" : "peak brightness",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -171,7 +691,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 633.416629492155153, 977.199998795986176, 133.25, 22.0 ],
+					"patching_rect" : [ 656.499999597127953, 811.491674840450287, 118.25, 22.0 ],
 					"text" : "cycles",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -185,7 +705,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 633.416629492155153, 945.699998795986176, 133.25, 22.0 ],
+					"patching_rect" : [ 656.499999597127953, 779.991674840450287, 118.25, 22.0 ],
 					"text" : "period",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -199,7 +719,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 440.449973165988922, 911.000000357627869, 75.5, 22.0 ],
+					"patching_rect" : [ 448.533343270961723, 743.391670390963554, 75.5, 22.0 ],
 					"text" : "from_color",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -213,7 +733,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.449973165988922, 911.000000357627869, 75.5, 22.0 ],
+					"patching_rect" : [ 255.533343270961723, 743.391670390963554, 75.5, 22.0 ],
 					"text" : "color",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -228,7 +748,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 120.933301537147599, 1113.666687786579132, 67.0, 27.0 ],
+					"patching_rect" : [ 129.0166716421204, 946.058357819914818, 67.0, 27.0 ],
 					"text" : "s to_Lifx"
 				}
 
@@ -241,7 +761,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.699973165988922, 933.099999576807022, 68.0, 68.0 ]
+					"patching_rect" : [ 142.783343270961723, 767.391675621271133, 68.0, 68.0 ]
 				}
 
 			}
@@ -253,7 +773,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 189.699973165988922, 943.199998795986176, 191.0, 56.0 ],
+					"patching_rect" : [ 212.783343270961723, 777.491674840450287, 191.0, 56.0 ],
 					"saturation" : 1.0
 				}
 
@@ -1801,7 +2321,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 189.699973165988922, 1001.199998795986176, 191.0, 27.0 ],
+					"patching_rect" : [ 212.783343270961723, 835.491674840450287, 191.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1825,7 +2345,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 575.666629492155153, 1001.199998795986176, 58.0, 27.0 ]
+					"patching_rect" : [ 598.749999597127953, 835.491674840450287, 58.0, 27.0 ]
 				}
 
 			}
@@ -1841,7 +2361,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 575.666629492155153, 972.199998795986176, 58.0, 27.0 ]
+					"patching_rect" : [ 598.749999597127953, 806.491674840450287, 58.0, 27.0 ]
 				}
 
 			}
@@ -1853,7 +2373,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 382.699973165988922, 943.199998795986176, 191.0, 56.0 ],
+					"patching_rect" : [ 405.783343270961723, 777.491674840450287, 191.0, 56.0 ],
 					"saturation" : 1.0
 				}
 
@@ -3401,7 +3921,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 382.699973165988922, 1001.199998795986176, 191.0, 27.0 ],
+					"patching_rect" : [ 405.783343270961723, 835.491674840450287, 191.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3421,7 +3941,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 166.271401737417364, 1038.733344793319702, 467.200003743171692, 24.0 ],
+					"patching_rect" : [ 189.354771842390164, 873.025020837783813, 467.200003743171692, 24.0 ],
 					"text" : "pak pulse %s %s 1 10 true true 0.8"
 				}
 
@@ -3435,7 +3955,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.933301537147599, 1071.666687786579132, 645.733327955007553, 40.0 ],
+					"patching_rect" : [ 129.0166716421204, 904.058357819914818, 645.733327955007553, 40.0 ],
 					"text" : "pulse #6ffff5 #0082e5 1 10 true true 0.65",
 					"textjustification" : 1
 				}
@@ -3453,7 +3973,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1284.633285818321383, 943.199998795986176, 58.0, 27.0 ]
+					"patching_rect" : [ 1265.608343209471059, 779.391675621271133, 58.0, 27.0 ]
 				}
 
 			}
@@ -3464,7 +3984,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1342.383285818321383, 1003.699998795986176, 133.25, 22.0 ],
+					"patching_rect" : [ 1323.358343209471059, 839.891675621271133, 120.283338608520353, 22.0 ],
 					"text" : "peak brightness",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -3478,7 +3998,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1342.383285818321383, 977.199998795986176, 133.25, 22.0 ],
+					"patching_rect" : [ 1323.358343209471059, 813.391675621271133, 120.283338608520353, 22.0 ],
 					"text" : "cycles",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -3492,7 +4012,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1342.383285818321383, 945.699998795986176, 133.25, 22.0 ],
+					"patching_rect" : [ 1323.358343209471059, 781.891675621271133, 120.283338608520353, 22.0 ],
 					"text" : "period",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -3506,7 +4026,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1149.416629492155153, 911.000000357627869, 75.5, 22.0 ],
+					"patching_rect" : [ 1130.391686883304828, 747.191677182912827, 75.5, 22.0 ],
 					"text" : "from_color",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -3520,7 +4040,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 956.416629492155153, 911.000000357627869, 75.5, 22.0 ],
+					"patching_rect" : [ 937.391686883304828, 747.191677182912827, 75.5, 22.0 ],
 					"text" : "color",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -3535,7 +4055,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 829.89995786331383, 1113.666687786579132, 67.0, 27.0 ],
+					"patching_rect" : [ 799.141682234142536, 947.991700813174248, 67.0, 27.0 ],
 					"text" : "s to_Lifx"
 				}
 
@@ -3548,7 +4068,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 828.666629492155153, 933.099999576807022, 68.0, 68.0 ]
+					"patching_rect" : [ 809.641686883304828, 769.29167640209198, 68.0, 68.0 ]
 				}
 
 			}
@@ -3560,7 +4080,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 898.666629492155153, 943.199998795986176, 191.0, 56.0 ],
+					"patching_rect" : [ 879.641686883304828, 779.391675621271133, 191.0, 56.0 ],
 					"saturation" : 1.0
 				}
 
@@ -5108,7 +5628,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 898.666629492155153, 1001.199998795986176, 191.0, 27.0 ],
+					"patching_rect" : [ 879.641686883304828, 837.391675621271133, 191.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5132,7 +5652,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1284.633285818321383, 1001.199998795986176, 58.0, 27.0 ]
+					"patching_rect" : [ 1265.608343209471059, 837.391675621271133, 58.0, 27.0 ]
 				}
 
 			}
@@ -5148,7 +5668,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1284.633285818321383, 972.199998795986176, 58.0, 27.0 ]
+					"patching_rect" : [ 1265.608343209471059, 808.391675621271133, 58.0, 27.0 ]
 				}
 
 			}
@@ -5160,7 +5680,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1091.666629492155153, 943.199998795986176, 191.0, 56.0 ],
+					"patching_rect" : [ 1072.641686883304828, 779.391675621271133, 191.0, 56.0 ],
 					"saturation" : 1.0
 				}
 
@@ -6708,7 +7228,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1091.666629492155153, 1001.199998795986176, 191.0, 27.0 ],
+					"patching_rect" : [ 1072.641686883304828, 837.391675621271133, 191.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6728,7 +7248,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 875.238058063583594, 1038.733344793319702, 428.395227754737675, 24.0 ],
+					"patching_rect" : [ 856.21311545473327, 874.92502161860466, 428.395227754737675, 24.0 ],
 					"text" : "pak breathe %s %s 1 10 true true 0.8"
 				}
 
@@ -6742,7 +7262,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 942.650005757808685, 214.000006914138794, 145.250023007392883, 90.0 ],
+					"patching_rect" : [ 395.749997437000275, 391.833327174186707, 145.250023007392883, 90.0 ],
 					"text" : "getID\n\nGet the id of a light",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -6756,7 +7276,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 942.650005757808685, 415.699998736381531, 67.0, 27.0 ],
+					"patching_rect" : [ 395.749997437000275, 565.833327174186707, 67.0, 27.0 ],
 					"text" : "s to_Lifx"
 				}
 
@@ -6770,7 +7290,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 942.650005757808685, 348.000006914138794, 74.0, 40.0 ],
+					"patching_rect" : [ 395.749997437000275, 525.833327174186707, 74.0, 40.0 ],
 					"text" : "getID",
 					"textjustification" : 1
 				}
@@ -6787,7 +7307,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 667.200013697147369, 16.0, 313.666682958602905, 156.833341479301453 ],
+					"patching_rect" : [ 590.708284853807527, 15.0, 313.666682958602905, 156.833341479301453 ],
 					"pic" : "csk:/Users/csk/Documents/_REPO/n4m-supplemental/lifx/assets/LIFX_Logo.png"
 				}
 
@@ -6801,7 +7321,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 621.666629492155153, 764.833327174186707, 160.0, 125.0 ],
+					"patching_rect" : [ 614.749999597127953, 618.158340200781822, 160.0, 125.0 ],
 					"text" : "color: '#5ED173',\nfrom_color: '#E36FDD',\nperiod: 10,\ncycles: 10,\npersist: true,\npower_on: true,\npeak: 0.8",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
@@ -6811,14 +7331,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
-					"fontsize" : 16.0,
+					"fontsize" : 13.0,
 					"id" : "obj-71",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1790.899982750415802, 350.250006914138794, 155.900007486343384, 111.0 ],
-					"text" : "    power: 'on',\n    color: 'blue saturation:0.5',\n    brightness: 0.5,\n    duration: 5\t",
+					"patching_rect" : [ 1101.391591547838289, 367.833327114582062, 129.0, 91.0 ],
+					"text" : "    power: 'on',\n    color: 'blue saturation:0.5,\n    brightness: 0.5,\n    duration: 5\t",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
 				}
@@ -6827,50 +7347,12 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-61",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 53.800005376338959, 109.0, 33.0, 38.0 ],
-					"text" : "2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-60",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 53.800005376338959, 66.0, 33.0, 38.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 32.0,
-					"id" : "obj-59",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 92.300005376338959, 16.0, 103.0, 48.0 ],
-					"text" : "Setup"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
+					"fontsize" : 14.0,
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1451.399982750415802, 707.500006914138794, 59.0, 24.0 ],
+					"patching_rect" : [ 903.291630028596956, 565.833327174186707, 67.0, 27.0 ],
 					"text" : "s to_Lifx"
 				}
 
@@ -6884,7 +7366,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 814.616625754943925, 762.966663375496864, 485.466660975328523, 90.0 ],
+					"patching_rect" : [ 799.141682234142536, 618.158340200781822, 485.466660975328523, 90.0 ],
 					"text" : "breathe\n\nPerforms a breathe effect by slowly fading between the given colors. Use the parameters to tweak the effect.",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -6899,24 +7381,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1333.983281982762492, 762.966663375496864, 155.0, 125.0 ],
+					"patching_rect" : [ 1288.641681817991412, 618.158340200781822, 155.0, 125.0 ],
 					"text" : "color: '#006633',\nfrom_color: '#00AF33',\nperiod: 1,\ncycles: 10,\npersist: true,\npower_on: true,\npeak: 0.8",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-55",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 109.0, 66.0, 27.0 ],
-					"text" : "r to_Lifx"
 				}
 
 			}
@@ -6928,7 +7396,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 682.200013697147369, 415.699998736381531, 67.0, 27.0 ],
+					"patching_rect" : [ 133.300005376338959, 565.833327174186707, 67.0, 27.0 ],
 					"text" : "s to_Lifx"
 				}
 
@@ -6942,7 +7410,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.699973165988922, 764.833327174186707, 485.466660975328523, 90.0 ],
+					"patching_rect" : [ 129.0166716421204, 618.158340200781822, 485.466660975328523, 90.0 ],
 					"text" : "pulse\n\nPerforms a pulse effect by quickly flashing between the given colors. Use the parameters to tweak the effect.",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -6957,7 +7425,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1451.399982750415802, 348.000006914138794, 228.0, 69.0 ],
+					"patching_rect" : [ 903.291630028596956, 296.833327174186707, 232.0, 69.0 ],
 					"text" : "setState\n\nSets the state of the lights",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
@@ -6972,85 +7440,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 682.200013697147369, 214.000006914138794, 228.0, 132.0 ],
+					"patching_rect" : [ 133.300005376338959, 391.833327174186707, 228.0, 132.0 ],
 					"text" : "listLights\n\nGets lights belonging to the authenticated account. Filter the lights using selectors.",
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1451.399982750415802, 419.000006914138794, 68.0, 68.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"id" : "obj-41",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1638.599986910820007, 493.000006914138794, 78.5, 22.0 ],
-					"text" : "saturation",
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"id" : "obj-39",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1683.399982750415802, 552.000006914138794, 75.5, 22.0 ],
-					"text" : "duration",
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"id" : "obj-15",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1660.399984002113342, 522.000006914138794, 76.5, 22.0 ],
-					"text" : "brightness",
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1669.899984002113342, 455.500006914138794, 67.0, 22.0 ],
-					"text" : "color",
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1669.899984002113342, 421.500006914138794, 69.0, 22.0 ],
-					"text" : "power",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -7064,165 +7455,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.616625754943925, 854.966663375496864, 485.466660975328523, 29.0 ],
+					"patching_rect" : [ 799.141682234142536, 710.158340200781822, 485.466660975328523, 29.0 ],
 					"text" : "breathe #E36FDD #5ED173 1 10 true true 0.8",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-157",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1576.899982750415802, 419.000006914138794, 42.0, 27.0 ],
-					"text" : "off"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-158",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1537.399982750415802, 419.000006914138794, 36.0, 27.0 ],
-					"text" : "on"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-155",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1627.899983584880829, 453.000006914138794, 39.0, 27.0 ],
-					"text" : "blue"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-154",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1576.899982750415802, 453.000006914138794, 49.0, 27.0 ],
-					"text" : "green"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-153",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1624.899982750415802, 549.500006914138794, 58.0, 27.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"format" : 6,
-					"id" : "obj-151",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1602.899984002113342, 519.500006914138794, 56.0, 27.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"format" : 6,
-					"id" : "obj-149",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1581.399982750415802, 490.500006914138794, 56.0, 27.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-145",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1537.399982750415802, 453.000006914138794, 38.0, 27.0 ],
-					"text" : "red"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-142",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1537.399982750415802, 616.900004684925079, 131.0, 27.0 ],
-					"text" : "prepend setState"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-141",
-					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1537.399982750415802, 587.900004684925079, 107.0, 27.0 ],
-					"text" : "pak s s 0. 0. 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-140",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1451.399982750415802, 651.500006973743439, 225.0, 27.0 ],
-					"text" : "setState on green 0.31 1. 9"
 				}
 
 			}
@@ -7235,7 +7470,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.699973165988922, 856.833327174186707, 487.366653500906068, 29.0 ],
+					"patching_rect" : [ 129.0166716421204, 710.158340200781822, 487.366653500906068, 29.0 ],
 					"text" : "pulse #5ED173 #E36FDD 10 10 true true 0.8",
 					"textjustification" : 1
 				}
@@ -7250,8 +7485,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 829.89995786331383, 1071.666687786579132, 645.733327955007553, 40.0 ],
-					"text" : "breathe %s %s 1 10 true true 1.",
+					"patching_rect" : [ 797.908353862983859, 904.058357819914818, 645.733327955007553, 40.0 ],
+					"text" : "breathe #53a6ff #258eff 1 10 true true 1.",
 					"textjustification" : 1
 				}
 
@@ -7265,7 +7500,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 682.200013697147369, 348.000006914138794, 129.0, 40.0 ],
+					"patching_rect" : [ 133.300005376338959, 525.833327174186707, 129.0, 40.0 ],
 					"text" : "listLights",
 					"textjustification" : 1
 				}
@@ -7273,117 +7508,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-11",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.300005376338959, 66.0, 457.0, 40.0 ],
-					"text" : "script npm install lifx-http-api --save",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-5",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "n4m.monitor.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 265.200013697147369, 199.000006914138794, 400.0, 220.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-65",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.300005376338959, 214.000006914138794, 93.0, 40.0 ],
-					"text" : "ready",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-30",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 400.300005376338959, 109.0, 149.0, 40.0 ],
-					"text" : "script stop",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-31",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.300005376338959, 109.0, 155.0, 40.0 ],
-					"text" : "script start",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-32",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 92.300005376338959, 167.400000929832458, 191.900008320808411, 27.0 ],
-					"saved_object_attributes" : 					{
-						"autostart" : 0,
-						"defer" : 0,
-						"watch" : 0
-					}
-,
-					"text" : "node.script lifx.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"bgcolor" : [ 0.0, 0.419607843137255, 0.466666666666667, 1.0 ],
 					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-9",
+					"bordercolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"id" : "obj-144",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1317.3332781472036, 749.833327174186707, 188.300007671117783, 151.266672402620316 ],
+					"patching_rect" : [ 118.300005376338959, 607.833327174186707, 667.166660486570436, 377.158373638987541 ],
 					"proportion" : 0.5
 				}
 
@@ -7392,15 +7527,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"bgcolor" : [ 0.0, 0.419607843137255, 0.466666666666667, 1.0 ],
 					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-8",
+					"bordercolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"id" : "obj-143",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 798.666629492155153, 749.833327174186707, 517.366653500906068, 151.266672402620316 ],
+					"patching_rect" : [ 788.466665862909394, 607.833327174186707, 667.166660486570436, 377.158373638987541 ],
 					"proportion" : 0.5
 				}
 
@@ -7409,15 +7544,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"bgcolor" : [ 0.0, 0.419607843137255, 0.466666666666667, 1.0 ],
 					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-96",
+					"bordercolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"id" : "obj-24",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 798.666629492155153, 903.099999576807022, 706.96665632616623, 267.56668820977211 ],
+					"patching_rect" : [ 558.499974429607391, 281.833327174186707, 326.749976992607117, 322.0 ],
 					"proportion" : 0.5
 				}
 
@@ -7426,15 +7561,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"bgcolor" : [ 0.0, 0.419607843137255, 0.466666666666667, 1.0 ],
 					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"bordercolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
 					"id" : "obj-83",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 667.200013697147369, 199.000006914138794, 258.499953985214233, 204.0 ],
+					"patching_rect" : [ 118.300005376338959, 376.833327174186707, 258.499953985214233, 228.0 ],
 					"proportion" : 0.5
 				}
 
@@ -7443,15 +7578,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"bgcolor" : [ 0.0, 0.419607843137255, 0.466666666666667, 1.0 ],
 					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"bordercolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
 					"id" : "obj-91",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 927.650005757808685, 199.000006914138794, 175.749976992607117, 204.0 ],
+					"patching_rect" : [ 380.749997437000275, 376.833327174186707, 174.749976992607117, 228.0 ],
 					"proportion" : 0.5
 				}
 
@@ -7460,83 +7595,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
+					"bgcolor" : [ 0.0, 0.419607843137255, 0.466666666666667, 1.0 ],
 					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-74",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 89.699973165988922, 749.833327174186707, 517.366653500906068, 151.266672402620316 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
-					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-80",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 608.36662182103737, 749.833327174186707, 188.300007671117783, 151.266672402620316 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
-					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-73",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1775.899982750415802, 333.000006914138794, 185.900007486343384, 145.5 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
-					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"bordercolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
 					"id" : "obj-70",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1436.399982750415802, 333.000006914138794, 337.5, 360.500000059604645 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"bgcolor" : [ 0.14094015955925, 0.0, 0.466399967670441, 1.0 ],
-					"border" : 3,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-119",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 89.699973165988922, 903.099999576807022, 706.96665632616623, 267.56668820977211 ],
+					"patching_rect" : [ 888.291630028596956, 281.833327174186707, 646.941688000074464, 322.0 ],
 					"proportion" : 0.5
 				}
 
@@ -7628,6 +7695,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-140", 0 ],
+					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 0 ],
+					"midpoints" : [ 1373.291630028596956, 336.333327114582062, 1320.291624425760347, 336.333327114582062, 1320.291624425760347, 466.833327114582062, 1333.791630028596956, 466.833327114582062 ],
+					"source" : [ "obj-129", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 0 ],
+					"midpoints" : [ 1333.791630028596956, 336.333327114582062, 1320.291624425760347, 336.333327114582062, 1320.291624425760347, 466.333327114582062, 1333.791630028596956, 466.333327114582062 ],
+					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 1 ],
+					"midpoints" : [ 1424.291630863061982, 372.783325999975204, 1355.791630028596956, 372.783325999975204 ],
+					"source" : [ "obj-131", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-109", 0 ],
 					"source" : [ "obj-132", 0 ]
 				}
@@ -7635,87 +7733,63 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"source" : [ "obj-140", 0 ]
+					"destination" : [ "obj-139", 1 ],
+					"midpoints" : [ 1373.291630028596956, 373.033318936824799, 1320.791624425760347, 373.033318936824799, 1320.791624425760347, 467.033318936824799, 1355.791630028596956, 467.033318936824799 ],
+					"source" : [ "obj-133", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-142", 0 ],
-					"source" : [ "obj-141", 0 ]
+					"destination" : [ "obj-139", 4 ],
+					"midpoints" : [ 1421.291630028596956, 472.533325999975204, 1421.791630028596956, 472.533325999975204 ],
+					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 3 ],
+					"midpoints" : [ 1399.291631280294496, 459.333327114582062, 1399.791630028596956, 459.333327114582062 ],
+					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 2 ],
+					"midpoints" : [ 1377.791630028596956, 402.333327114582062, 1377.791630028596956, 402.333327114582062 ],
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 1 ],
+					"midpoints" : [ 1333.791630028596956, 467.833327114582062, 1355.791630028596956, 467.833327114582062 ],
+					"source" : [ "obj-137", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-140", 1 ],
-					"midpoints" : [ 1546.899982750415802, 648.200005829334259, 1666.899982750415802, 648.200005829334259 ],
-					"source" : [ "obj-142", 0 ]
+					"midpoints" : [ 1333.791630028596956, 535.533326029777527, 1453.791630028596956, 535.533326029777527 ],
+					"source" : [ "obj-138", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-141", 1 ],
-					"midpoints" : [ 1546.899982750415802, 580.500006914138794, 1568.899982750415802, 580.500006914138794 ],
-					"source" : [ "obj-145", 0 ]
+					"destination" : [ "obj-138", 0 ],
+					"source" : [ "obj-139", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-141", 2 ],
-					"midpoints" : [ 1590.899982750415802, 515.000006914138794, 1590.899982750415802, 515.000006914138794 ],
-					"source" : [ "obj-149", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 3 ],
-					"midpoints" : [ 1612.399984002113342, 572.000006914138794, 1612.899982750415802, 572.000006914138794 ],
-					"source" : [ "obj-151", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 4 ],
-					"midpoints" : [ 1634.399982750415802, 585.200005799531937, 1634.899982750415802, 585.200005799531937 ],
-					"source" : [ "obj-153", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 1 ],
-					"midpoints" : [ 1586.399982750415802, 485.699998736381531, 1533.899977147579193, 485.699998736381531, 1533.899977147579193, 579.699998736381531, 1568.899982750415802, 579.699998736381531 ],
-					"source" : [ "obj-154", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 1 ],
-					"midpoints" : [ 1637.399983584880829, 485.450005799531937, 1568.899982750415802, 485.450005799531937 ],
-					"source" : [ "obj-155", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
-					"midpoints" : [ 1586.399982750415802, 449.000006914138794, 1533.399977147579193, 449.000006914138794, 1533.399977147579193, 579.500006914138794, 1546.899982750415802, 579.500006914138794 ],
-					"source" : [ "obj-157", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
-					"midpoints" : [ 1546.899982750415802, 449.000006914138794, 1533.399977147579193, 449.000006914138794, 1533.399977147579193, 579.000006914138794, 1546.899982750415802, 579.000006914138794 ],
-					"source" : [ "obj-158", 0 ]
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-140", 0 ]
 				}
 
 			}
@@ -7764,7 +7838,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 409.800005376338959, 156.0, 101.800005376338959, 156.0 ],
+					"midpoints" : [ 370.800005376338959, 106.0, 62.800005376338959, 106.0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -7772,6 +7846,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 122.800005376338959, 99.0, 62.800005376338959, 99.0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -7786,7 +7861,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 1 ],
-					"midpoints" : [ 101.800005376338959, 196.200003921985626, 175.800005376338959, 196.200003921985626 ],
+					"midpoints" : [ 62.800005376338959, 145.200003921985626, 136.800005376338959, 145.200003921985626 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -7800,15 +7875,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-140", 0 ],
-					"source" : [ "obj-45", 0 ]
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -7822,7 +7918,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 564.5, 156.700000464916229, 101.800005376338959, 156.700000464916229 ],
+					"midpoints" : [ 525.5, 106.0, 62.800005376338959, 106.0 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -7869,8 +7965,29 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "LIFX_Logo.png",
+				"bootpath" : "~/Documents/_REPO/n4m-supplemental/lifx/assets",
+				"patcherrelativepath" : "./assets",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "lifx.js",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/lifx",
 				"patcherrelativepath" : ".",
@@ -7893,13 +8010,6 @@
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LIFX_Logo.png",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/lifx/assets",
-				"patcherrelativepath" : "./assets",
-				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
