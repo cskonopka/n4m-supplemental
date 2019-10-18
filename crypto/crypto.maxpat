@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 861.0, 693.0 ],
+		"rect" : [ 34.0, 79.0, 856.0, 684.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,6 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 418.999960124492645, 15.0, 420.0, 132.0 ],
+					"presentation_linecount" : 4,
 					"text" : "1) Install the \"crypto\" library\n2) Start the Node-for-Max script\n3) Encrypt the demo message\n4) Decrypt the demo message"
 				}
 
@@ -61,7 +62,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.399982750415802, 15.0, 399.0, 163.0 ],
-					"presentation_linecount" : 5,
 					"text" : "crypto\n\nCreate an encrypted .json message and decrypt the encrypted .json message"
 				}
 
@@ -74,7 +74,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.399982750415802, 323.0, 33.0, 38.0 ],
+					"patching_rect" : [ 15.399982750415802, 329.0, 33.0, 38.0 ],
 					"text" : "4"
 				}
 
@@ -101,23 +101,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.899982750415802, 323.0, 270.0, 40.0 ],
-					"text" : "encryptedPhrase.json",
+					"patching_rect" : [ 68.899982750415802, 329.0, 370.0, 40.0 ],
+					"text" : "decrypt encryptedPhrase.json",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 14.0,
-					"id" : "obj-40",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.899982750415802, 367.0, 125.0, 27.0 ],
-					"text" : "prepend decrypt"
 				}
 
 			}
@@ -273,7 +259,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 78.399982750415802, 330.0, 63.399982750415802, 330.0 ],
+					"midpoints" : [ 78.399982750415802, 325.0, 63.399982750415802, 325.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -312,14 +298,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 103.399982750415802, 400.0, 63.399982750415802, 400.0 ],
-					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -327,7 +305,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "crypto.js",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/cryptography",
+				"bootpath" : "~/Documents/_REPO/n4m-supplemental/crypto",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

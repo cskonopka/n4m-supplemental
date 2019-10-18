@@ -15,3 +15,5 @@ The *crypto* patch demonstrates how to create encrypted message as JSON objects 
 - Click *encrypt "Hello from Max!"*. The demo message will be encrypted, placed into a new JSON object and saved as a new JSON file named "encryptedPhrase.json".
 - Click *decrypt encryptedPhrase.json". The file *encryptedPhrase.json* is read and the JSON object is decrypted, displaying the original message.
 
+## Todo
+- Save encryption key for p2p sharing.
