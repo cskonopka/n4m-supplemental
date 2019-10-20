@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 856.0, 684.0 ],
+		"rect" : [ 34.0, 79.0, 1290.0, 684.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,50 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 771.399982750415802, 177.5, 150.0, 114.0 ],
+					"text" : "RgUkXp2s5v8x/A?D(G+KbPeShVmYq3t6\n\nF-JaNdRgUkXp2s5v8y/B?E(H+KbPeShV\n\njWnZr4u7x!A%D*G-KaPdSgUkXp2s5v8y"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-1",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 629.899982750415802, 522.0, 385.0, 40.0 ],
+					"presentation_linecount" : 2,
+					"text" : "decrypt2 encryptedPhrase.json",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 629.899982750415802, 472.0, 335.0, 40.0 ],
+					"presentation_linecount" : 2,
+					"text" : "encrypt2 \"Hello from Max!\"",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-10",
@@ -47,7 +91,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 418.999960124492645, 15.0, 420.0, 132.0 ],
-					"presentation_linecount" : 4,
 					"text" : "1) Install the \"crypto\" library\n2) Start the Node-for-Max script\n3) Encrypt the demo message\n4) Decrypt the demo message"
 				}
 
@@ -237,19 +280,28 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 53.899982750415802, 407.400000929832458, 153.0, 27.0 ],
+					"patching_rect" : [ 53.899982750415802, 407.400000929832458, 175.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script crypto.js"
+					"text" : "node.script crypto-alt.js"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -261,6 +313,13 @@
 					"destination" : [ "obj-32", 0 ],
 					"midpoints" : [ 78.399982750415802, 325.0, 63.399982750415802, 325.0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -304,7 +363,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "crypto.js",
+				"name" : "crypto-alt.js",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/crypto",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",

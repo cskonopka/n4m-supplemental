@@ -2,10 +2,8 @@
 const Max = require("max-api");
 const crypto = require('crypto');
 const algorithm = 'aes-256-cbc';
-// const key = crypto.randomBytes(32);
-var fs = require("fs");
-// const iv = crypto.randomBytes(16);
-
+const key = crypto.randomBytes(32);
+const iv = crypto.randomBytes(16);
 var delayInMilliseconds = 1000; //1 second
 
 function anypost(str) {
@@ -16,7 +14,7 @@ function anypost(str) {
     }
 }
 
-var passer = new Object;    
+var passer = new Object;
 Max.addHandler("encrypt", (string) => {
     var hw = encrypt(string);
     anypost(hw);
@@ -25,43 +23,19 @@ Max.addHandler("encrypt", (string) => {
     }, delayInMilliseconds);
 });
 
-
 function encrypt(text) {
-    let iv = crypto.randomBytes(16);
-    let key = crypto.randomBytes(32);
     let cipher = crypto.createCipheriv(algorithm, Buffer.from(key), iv);
     let encrypted = cipher.update(text);
     encrypted = Buffer.concat([encrypted, cipher.final()]);
-    return { iv: iv.toString('hex'), encryptedData: encrypted.toString('hex'), key: key };
+    return { iv: iv.toString('hex'), encryptedData: encrypted.toString('hex') };
 }
-
-Max.addHandler("encrypt2", (...string) => {
-    var hw = encrypt(string[0]);
-    let data = JSON.stringify(hw, null, 2);
-    anypost("encrypted message -> " + data);
-    fs.writeFile(string[1], data, (err) => {
-        if (err) throw err;
-        anypost('*** encrypted file created ***');
-    });
-});
 
 
 function decrypt(text) {
-// anypost(text);
     let iv = Buffer.from(text.iv, 'hex');
     let encryptedText = Buffer.from(text.encryptedData, 'hex');
-    let key = Buffer.from(text.key);
-
-    let decipher = crypto.createDecipheriv(algorithm, key, iv);
+    let decipher = crypto.createDecipheriv(algorithm, Buffer.from(key), iv);
     let decrypted = decipher.update(encryptedText);
     decrypted = Buffer.concat([decrypted, decipher.final()]);
     return decrypted.toString();
 } 
-
-Max.addHandler("decrypt2", (filenamestring) => {
-    let rawdata = fs.readFileSync(filenamestring);
-    anypost(rawdata);
-    let incomingFile = JSON.parse(rawdata);
-    anypost(incomingFile);
-    anypost("decrypted message -> " + decrypt(incomingFile));
-});
