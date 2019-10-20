@@ -17,13 +17,13 @@ function anypost(str) {
 }
 
 var passer = new Object;    
-Max.addHandler("encrypt", (string) => {
-    var hw = encrypt(string);
-    anypost(hw);
-    setTimeout(function () {
-        anypost(decrypt(hw));
-    }, delayInMilliseconds);
-});
+// Max.addHandler("encrypt", (string) => {
+//     var hw = encrypt(string);
+//     anypost(hw);
+//     setTimeout(function () {
+//         anypost(decrypt(hw));
+//     }, delayInMilliseconds);
+// });
 
 
 function encrypt(text) {
@@ -38,7 +38,6 @@ function encrypt(text) {
 Max.addHandler("encrypt2", (...string) => {
     var hw = encrypt(string[0]);
     let data = JSON.stringify(hw, null, 2);
-    anypost("encrypted message -> " + data);
     fs.writeFile(string[1], data, (err) => {
         if (err) throw err;
         anypost('*** encrypted file created ***');
@@ -47,7 +46,6 @@ Max.addHandler("encrypt2", (...string) => {
 
 
 function decrypt(text) {
-// anypost(text);
     let iv = Buffer.from(text.iv, 'hex');
     let encryptedText = Buffer.from(text.encryptedData, 'hex');
     let key = Buffer.from(text.key);

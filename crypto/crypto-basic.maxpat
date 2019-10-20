@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1290.0, 684.0 ],
+		"rect" : [ 34.0, 79.0, 855.0, 684.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,50 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 771.399982750415802, 177.5, 150.0, 114.0 ],
-					"text" : "RgUkXp2s5v8x/A?D(G+KbPeShVmYq3t6\n\nF-JaNdRgUkXp2s5v8y/B?E(H+KbPeShV\n\njWnZr4u7x!A%D*G-KaPdSgUkXp2s5v8y"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-1",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 629.899982750415802, 522.0, 385.0, 40.0 ],
-					"presentation_linecount" : 2,
-					"text" : "decrypt2 encryptedPhrase.json",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 629.899982750415802, 472.0, 335.0, 40.0 ],
-					"presentation_linecount" : 2,
-					"text" : "encrypt2 \"Hello from Max!\"",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
@@ -132,21 +88,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.399982750415802, 279.0, 33.0, 38.0 ],
 					"text" : "3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-54",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 68.899982750415802, 329.0, 370.0, 40.0 ],
-					"text" : "decrypt encryptedPhrase.json",
-					"textjustification" : 1
 				}
 
 			}
@@ -221,7 +162,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 187.799991071224213, 437.0, 400.0, 220.0 ],
+					"patching_rect" : [ 187.799991071224213, 364.099999070167542, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -235,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.899982750415802, 437.0, 93.0, 40.0 ],
+					"patching_rect" : [ 53.899982750415802, 364.099999070167542, 93.0, 40.0 ],
 					"text" : "ready",
 					"textjustification" : 1
 				}
@@ -280,7 +221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 53.899982750415802, 407.400000929832458, 175.0, 27.0 ],
+					"patching_rect" : [ 53.899982750415802, 334.5, 192.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -289,19 +230,12 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script crypto-alt.js"
+					"text" : "node.script crypto-basic.js"
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -313,13 +247,6 @@
 					"destination" : [ "obj-32", 0 ],
 					"midpoints" : [ 78.399982750415802, 325.0, 63.399982750415802, 325.0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -349,21 +276,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 1 ],
-					"midpoints" : [ 63.399982750415802, 436.0, 137.399982750415802, 436.0 ],
+					"midpoints" : [ 63.399982750415802, 363.099999070167542, 137.399982750415802, 363.099999070167542 ],
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-54", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "crypto-alt.js",
+				"name" : "crypto-basic.js",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/crypto",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
