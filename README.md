@@ -2,5 +2,13 @@
   <img width="65%" height="65%" src="https://i.ibb.co/7JYvGQ5/n4m-supplemental.png"/>  
 </p>
 
-Note: The repository is constantly under construction. If a patch is incomplete or missing documentation, check back periodically for updates or log an issue to ensure it is fixed.
+
+<p align="center">
+A compendium of Node-for-Max projects meant to be a supplement to the main <a href="https://github.com/Cycling74/n4m-examples">n4m-examples</a> repository.
+</br>
+*Note: The repository is constantly under construction.*
+</p>
+
+
+
 

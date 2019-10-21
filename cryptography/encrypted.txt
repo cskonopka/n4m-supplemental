@@ -1,4 +1,0 @@
-{
-	"iv" : "b65e807e9a35c168793850619c509a09",
-	"encryptedData" : "b28e8765fb0eb08ba034fb8fc00bea3b"
-}
