@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1631.0, 1009.0 ],
+		"rect" : [ 59.0, 104.0, 1084.0, 637.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Trek TNG Credits",
+					"fontsize" : 24.0,
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 596.708284853807527, 267.5, 33.0, 38.0 ],
+					"text" : "3"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 605.708284853807527, 313.0, 65.291715146192473, 65.291715146192473 ]
+					"patching_rect" : [ 631.708284853807527, 273.0, 65.291715146192473, 65.291715146192473 ]
 				}
 
 			}
@@ -58,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 996.0, 380.5, 43.0, 27.0 ],
+					"patching_rect" : [ 1022.0, 340.5, 43.0, 27.0 ],
 					"presentation_linecount" : 2,
 					"text" : "false"
 				}
@@ -73,7 +86,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 950.0, 345.0, 89.0, 27.0 ],
+					"patching_rect" : [ 976.0, 305.0, 89.0, 27.0 ],
 					"presentation_linecount" : 2,
 					"text" : "\"get pitted\""
 				}
@@ -88,7 +101,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 803.0, 345.0, 145.0, 27.0 ],
+					"patching_rect" : [ 829.0, 305.0, 145.0, 27.0 ],
 					"presentation_linecount" : 3,
 					"text" : "\"web, net or telnet\""
 				}
@@ -104,7 +117,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 673.0, 313.0, 58.0, 27.0 ]
+					"patching_rect" : [ 699.0, 273.0, 58.0, 27.0 ]
 				}
 
 			}
@@ -117,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 673.0, 448.0, 160.0, 27.0 ],
+					"patching_rect" : [ 699.0, 408.0, 160.0, 27.0 ],
 					"text" : "prepend send2sheets"
 				}
 
@@ -131,7 +144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 950.0, 380.5, 40.0, 27.0 ],
+					"patching_rect" : [ 976.0, 340.5, 40.0, 27.0 ],
 					"text" : "true"
 				}
 
@@ -145,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 699.0, 345.0, 101.0, 27.0 ],
+					"patching_rect" : [ 725.0, 305.0, 101.0, 27.0 ],
 					"text" : "\"n4m to ifttt\""
 				}
 
@@ -159,7 +172,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 673.0, 419.0, 71.0, 27.0 ],
+					"patching_rect" : [ 699.0, 379.0, 71.0, 27.0 ],
 					"text" : "pak 0 s s"
 				}
 
@@ -172,7 +185,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 605.708284853807527, 600.5, 77.0, 27.0 ],
+					"patching_rect" : [ 631.708284853807527, 526.5, 77.0, 27.0 ],
 					"text" : "s to_IFTTT"
 				}
 
@@ -186,8 +199,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1153.399982750415802, 294.0, 420.0, 101.0 ],
-					"text" : "1) Install the \"lifx-http-api- library\n2) Start the Node-for-Max script\n3) Change some colors"
+					"patching_rect" : [ 411.708284853807527, 149.0, 559.0, 101.0 ],
+					"text" : "1) Install the \"ifttt-webhooks-channel\" library\n2) Start the Node-for-Max script\n3) Send data to a sheet."
 				}
 
 			}
@@ -199,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.300005376338959, 59.0, 33.0, 38.0 ],
+					"patching_rect" : [ 82.208284853807527, 311.5, 33.0, 38.0 ],
 					"text" : "2"
 				}
 
@@ -212,7 +225,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.800005376338959, 15.0, 33.0, 38.0 ],
+					"patching_rect" : [ 14.708284853807527, 267.5, 33.0, 38.0 ],
 					"text" : "1"
 				}
 
@@ -226,7 +239,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.0, 59.0, 76.0, 27.0 ],
+					"patching_rect" : [ 514.908279477468568, 311.5, 76.0, 27.0 ],
 					"text" : "r to_IFTTT"
 				}
 
@@ -240,7 +253,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.300005376338959, 15.0, 499.0, 40.0 ],
+					"patching_rect" : [ 52.208284853807527, 267.5, 499.0, 40.0 ],
 					"text" : "script npm install ifttt-webhooks-channel",
 					"textjustification" : 1
 				}
@@ -261,7 +274,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 152.200013697147369, 150.000006914138794, 400.0, 220.0 ],
+					"patching_rect" : [ 151.108293174615937, 402.500006914138794, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -275,7 +288,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.300005376338959, 150.000006914138794, 93.0, 40.0 ],
+					"patching_rect" : [ 52.208284853807527, 402.500006914138794, 93.0, 40.0 ],
 					"text" : "ready",
 					"textjustification" : 1
 				}
@@ -290,7 +303,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 361.300005376338959, 59.0, 149.0, 40.0 ],
+					"patching_rect" : [ 360.208284853807527, 311.5, 149.0, 40.0 ],
 					"text" : "script stop",
 					"textjustification" : 1
 				}
@@ -305,7 +318,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 113.300005376338959, 59.0, 155.0, 40.0 ],
+					"patching_rect" : [ 112.208284853807527, 311.5, 155.0, 40.0 ],
 					"text" : "script start",
 					"textjustification" : 1
 				}
@@ -320,7 +333,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 53.300005376338959, 114.400000929832458, 195.0, 27.0 ],
+					"patching_rect" : [ 52.208284853807527, 366.900000929832458, 195.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -342,8 +355,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1153.399982750415802, 144.0, 399.0, 132.0 ],
-					"text" : "lifx-core\n\nA sandbox for testing LIFX bulb functionality with Node-for-Max."
+					"patching_rect" : [ 411.708284853807527, 15.0, 399.0, 132.0 ],
+					"text" : "ifttt-gsheets\n\nLog parameter data to the cloud using IFTTT and Google Sheets."
 				}
 
 			}
@@ -358,7 +371,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 605.708284853807527, 15.0, 395.0, 245.189024390243901 ],
+					"patching_rect" : [ 14.708284853807527, 15.0, 395.0, 245.189024390243901 ],
 					"pic" : "csk:/Users/csk/Documents/_REPO/n4m-supplemental/ifttt/assets/ifttt.jpg"
 				}
 
@@ -372,7 +385,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 605.708284853807527, 483.5, 433.0, 40.0 ],
+					"patching_rect" : [ 631.708284853807527, 443.5, 433.0, 40.0 ],
 					"text" : "send2sheets 16 \"get pitted\" false",
 					"textjustification" : 1
 				}
@@ -389,7 +402,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 122.800005376338959, 99.0, 62.800005376338959, 99.0 ],
+					"midpoints" : [ 121.708284853807527, 351.5, 61.708284853807527, 351.5 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -404,7 +417,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
-					"midpoints" : [ 62.800005376338959, 145.200003921985626, 136.800005376338959, 145.200003921985626 ],
+					"midpoints" : [ 61.708284853807527, 397.700003921985626, 135.708284853807527, 397.700003921985626 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -426,7 +439,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 2 ],
-					"midpoints" : [ 959.5, 412.75, 734.5, 412.75 ],
+					"midpoints" : [ 985.5, 372.75, 760.5, 372.75 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -434,7 +447,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"midpoints" : [ 682.5, 478.25, 1029.208284853807527, 478.25 ],
+					"midpoints" : [ 708.5, 438.25, 1055.208284853807527, 438.25 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -449,7 +462,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
-					"midpoints" : [ 812.5, 379.0, 708.5, 379.0 ],
+					"midpoints" : [ 838.5, 339.0, 734.5, 339.0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -457,7 +470,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
-					"midpoints" : [ 959.5, 379.0, 708.5, 379.0 ],
+					"midpoints" : [ 985.5, 339.0, 734.5, 339.0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -465,7 +478,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 2 ],
-					"midpoints" : [ 1005.5, 412.75, 734.5, 412.75 ],
+					"midpoints" : [ 1031.5, 372.75, 760.5, 372.75 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -480,7 +493,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 525.5, 106.0, 62.800005376338959, 106.0 ],
+					"midpoints" : [ 524.408279477468568, 358.5, 61.708284853807527, 358.5 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -495,7 +508,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 370.800005376338959, 106.0, 62.800005376338959, 106.0 ],
+					"midpoints" : [ 369.708284853807527, 358.5, 61.708284853807527, 358.5 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
