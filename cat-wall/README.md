@@ -10,3 +10,6 @@ An image-sonification project that uses Node for Max to get random cat images fr
 - Click *script start*.
 - Click *clear*
 - Turn on the sonification engine.
+
+## Demo
+[YouTube](https://youtu.be/ci_skDBduc0)
