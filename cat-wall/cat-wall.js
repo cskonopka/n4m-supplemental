@@ -1,38 +1,30 @@
-const Max = require("max-api");
+/* 
+cat-wall.js
+An image-sonification project that uses Node for Max to get random cat images from the Cat API using GET requests. Each image goes into a matrix and the [jit.spill] object is used to unpack RGB values into individual matrices. The matrices are used to generate frequencies and determine the "setdomain” for [function] objects within each cat synthesizer.
+*/
 
-var express = require('express');
-var app = express();
-var fs = require('fs');
+// Add Max API
+const Max = require("max-api");
+// Add https library
 const https = require('https');
 
-
-function anypost(str) {
-    if (Max) {
-//        Max.post(str);
-    } else {
-        console.log(str);
-    }
-}
-
-
-Max.addHandler("getCat", (string) => {
-
+// Handler for triggering GET request
+Max.addHandler("getCat", () => {
+    // GET request
     https.get("https://api.thecatapi.com/v1/images/search", res => {
-        res.setEncoding("utf8");
+        // Variable for used to receive incoming JSON data
         let body = "";
+
+        // Receive incoming data stream and add it to the body variable
         res.on("data", data => {
             body += data;
         });
+        // End incoming data stream
         res.on("end", () => {
+            // Parse incoming JSON body 
             body = JSON.parse(body);
-//            console.log(body);
-  //          anypost(body[0].url);
+            // Send image url to Max
             Max.outlet(body[0].url);
         });
     });
-
-});
-
-app.listen(3000, function () {
-    anypost("[NodeJS] Application Listening on Port 3000");
 });
