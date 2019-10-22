@@ -15,6 +15,7 @@
 ## Projects
 - **archive.org** -> Example of searching Archive.org.
 - **audio-encryption** -> Example of encrypting and decrypting an audio buffer.
+- **cat-wall** -> Example of image sonification using the Cat API.
 - **crypto** -> Examples of encryption using the [crypto](https://nodejs.org/api/crypto.html).
 - **dominos** -> Example of ordering Dominos using IFTTT.
 - **gratefuldead** -> Example of extracting audio from an Archive.org link.
