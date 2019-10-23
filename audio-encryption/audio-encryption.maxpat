@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 792.0, 711.0 ],
+		"rect" : [ 59.0, 104.0, 853.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,12 +54,12 @@
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-12",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.700013697147369, 460.0, 326.0, 32.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 34.700013697147369, 460.0, 326.0, 71.0 ],
 					"text" : "script npm i wavefile --save -g",
 					"textjustification" : 1
 				}
@@ -70,12 +70,12 @@
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 332.700013697147369, 521.0, 438.0, 32.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 332.700013697147369, 521.0, 438.0, 71.0 ],
 					"text" : "script npm i audiobuffer-to-wav --save -g",
 					"textjustification" : 1
 				}
@@ -102,7 +102,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.700013697147369, 468.0, 372.0, 32.0 ],
+					"patching_rect" : [ 384.700013697147369, 468.0, 372.0, 40.0 ],
 					"text" : "script npm i audio-buffer-from",
 					"textjustification" : 1
 				}
@@ -113,11 +113,12 @@
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-4",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.700013697147369, 426.0, 282.0, 32.0 ],
+					"patching_rect" : [ 384.700013697147369, 426.0, 282.0, 71.0 ],
 					"text" : "script npm i wav -g --save",
 					"textjustification" : 1
 				}
@@ -132,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 576.300005376338959, 90.0, 101.0, 32.0 ],
+					"patching_rect" : [ 576.300005376338959, 90.0, 101.0, 40.0 ],
 					"text" : "decrypt",
 					"textjustification" : 1
 				}
@@ -143,11 +144,12 @@
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-2",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.700013697147369, 578.0, 343.0, 32.0 ],
+					"patching_rect" : [ 203.700013697147369, 578.0, 343.0, 71.0 ],
 					"text" : "script npm i node-wav --save -g",
 					"textjustification" : 1
 				}
@@ -162,7 +164,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.300005376338959, 36.0, 100.0, 32.0 ],
+					"patching_rect" : [ 526.300005376338959, 36.0, 100.0, 40.0 ],
 					"text" : "encrypt",
 					"textjustification" : 1
 				}
@@ -176,7 +178,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.800005376338959, 111.0, 33.0, 30.0 ],
+					"patching_rect" : [ 12.800005376338959, 111.0, 33.0, 38.0 ],
 					"text" : "2"
 				}
 
@@ -189,7 +191,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.800005376338959, 68.0, 33.0, 30.0 ],
+					"patching_rect" : [ 12.800005376338959, 68.0, 33.0, 38.0 ],
 					"text" : "1"
 				}
 
@@ -202,7 +204,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 51.300005376338959, 18.0, 103.0, 38.0 ],
+					"patching_rect" : [ 51.300005376338959, 18.0, 103.0, 48.0 ],
 					"text" : "Setup"
 				}
 
@@ -216,7 +218,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 68.0, 441.0, 32.0 ],
+					"patching_rect" : [ 51.300005376338959, 68.0, 441.0, 40.0 ],
 					"text" : "script npm install ascii-cats -g --save",
 					"textjustification" : 1
 				}
@@ -251,7 +253,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 216.000006914138794, 93.0, 32.0 ],
+					"patching_rect" : [ 51.300005376338959, 216.000006914138794, 93.0, 40.0 ],
 					"text" : "ready",
 					"textjustification" : 1
 				}
@@ -266,7 +268,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.300005376338959, 111.0, 149.0, 32.0 ],
+					"patching_rect" : [ 359.300005376338959, 111.0, 149.0, 40.0 ],
 					"text" : "script stop",
 					"textjustification" : 1
 				}
@@ -281,7 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 111.0, 155.0, 32.0 ],
+					"patching_rect" : [ 51.300005376338959, 111.0, 155.0, 40.0 ],
 					"text" : "script start",
 					"textjustification" : 1
 				}
@@ -296,12 +298,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 51.300005376338959, 169.400000929832458, 224.0, 22.0 ],
+					"patching_rect" : [ 51.300005376338959, 169.400000929832458, 224.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -414,7 +414,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "audio-encryption.js",
-				"bootpath" : "~/Documents/_airReam/n4m-supplemental/audio-encryption",
+				"bootpath" : "~/Documents/_REPO/n4m-supplemental/audio-encryption",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -442,7 +442,6 @@
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontsize" : [ 32.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -453,7 +452,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

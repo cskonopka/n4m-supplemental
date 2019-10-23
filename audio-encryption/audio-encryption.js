@@ -9,7 +9,7 @@ const iv = crypto.randomBytes(16);
 var delayInMilliseconds = 3000;
 // 1 second
 const WaveFile = require('wavefile');
-var toWav = require('audiobuffer-to-wav')
+// var toWav = require('audiobuffer-to-wav')
 
 
 function anypost(str) {
@@ -27,8 +27,15 @@ anypost("START!!!!!!!");
 var holder = [];
 
 Max.addHandler("encrypt", () => {
-    var buffer = fs.readFileSync('/Users/io/Documents/_airReam/n4m-supplemental/audio-encryption/file1.wav');
+    var buffer = fs.readFileSync('/Users/csk/Documents/_REPO/n4m-supplemental/audio-encryption/file1.wav');
     var result = wav.decode(buffer);
+    anypost(result);
+
+    let data = JSON.stringify(result, null, 2);
+    fs.writeFile("hi.json", data, (err) => {
+        if (err) throw err;
+        anypost('*** encrypted file created ***');
+    });
     // anypost(result.channelData[0]);
     // var ready = result.channelData.join();
     // anypost(result);
@@ -66,11 +73,27 @@ Max.addHandler("encrypt", () => {
 });
 
 Max.addHandler("create", () => {
-    let wav = new WaveFile();
+    let wav2 = new WaveFile();
+    // wav2.fromScratch(1, 44100, '32', [0, -2147483648, 2147483647, 4]);
 
-    // Create a mono wave file, 44.1 kHz, 32-bit and 4 samples
-    wav.fromScratch(1, 44100, '32', [0, -2147483648, 2147483647, 4]);
-    fs.writeFileSync(path, wav.toBuffer());
+    let rawdata = fs.readFileSync("/Users/csk/Documents/_REPO/n4m-supplemental/audio-encryption/hi.json");
+    // anypost(rawdata);
+
+    let incomingFile = JSON.parse(rawdata);
+    anypost(incomingFile.channelData[0].length);
+
+    // anypost(incomingFile.channelData[0]);
+    // for (i = 0; i < incomingFile.channelData.length; i++) {
+    //     anypost(incomingFile.channelData[0][i])
+    // }
+
+    // anypost("decrypted message -> " + decrypt(incomingFile));
+
+    // wav2.fromScratch(2, incomingFile.sampleRate, '32f', [
+    //     incomingFile.channelData[0],
+    //     incomingFile.channelData[1]
+    // ]);
+    // fs.writeFileSync("/Users/csk/Documents/_REPO/n4m-supplemental/audio-encryption/test.wav", wav2.toBuffer());
 });
 
 Max.addHandler("decrypt", () => {
@@ -105,7 +128,7 @@ function encrypt(text) {
     let cipher = crypto.createCipheriv(algorithm, Buffer.from(key), iv);
     let encrypted = cipher.update(text);
     encrypted = Buffer.concat([encrypted, cipher.final()]);
-    return {iv: iv.toString('hex'), encryptedData: encrypted.toString('hex')};
+    return { iv: iv.toString('hex'), encryptedData: encrypted.toString('hex') };
 }
 
 
