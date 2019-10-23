@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 792.0, 711.0 ],
+		"rect" : [ 34.0, 79.0, 855.0, 684.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,29 +39,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 690.0, 43.0, 42.0, 22.0 ],
-					"text" : "create"
+					"id" : "obj-3",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 70.0, 407.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-12",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.700013697147369, 460.0, 326.0, 32.0 ],
-					"presentation_linecount" : 2,
-					"text" : "script npm i wavefile --save -g",
-					"textjustification" : 1
+					"id" : "obj-4",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 465.0, 289.0, 385.0, 144.0 ],
+					"setstyle" : 2,
+					"settype" : 0
 				}
 
 			}
@@ -70,26 +68,12 @@
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
 					"id" : "obj-10",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 332.700013697147369, 521.0, 438.0, 32.0 ],
-					"presentation_linecount" : 2,
-					"text" : "script npm i audiobuffer-to-wav --save -g",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 346.0, 173.0, 22.0 ],
-					"text" : "script npm install wav --save -g"
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 418.999960124492645, 15.0, 420.0, 102.0 ],
+					"text" : "1) Install the \"crypto\" library\n2) Start the Node-for-Max script\n3) Encrypt the demo message\n4) Decrypt the demo message"
 				}
 
 			}
@@ -97,14 +81,13 @@
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.700013697147369, 468.0, 372.0, 32.0 ],
-					"text" : "script npm i audio-buffer-from",
-					"textjustification" : 1
+					"id" : "obj-57",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.399982750415802, 15.0, 399.0, 126.0 ],
+					"text" : "crypto\n\nCreate an encrypted .json message and decrypt the encrypted .json message"
 				}
 
 			}
@@ -112,14 +95,12 @@
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
-					"id" : "obj-4",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.700013697147369, 426.0, 282.0, 32.0 ],
-					"text" : "script npm i wav -g --save",
-					"textjustification" : 1
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.399982750415802, 329.0, 33.0, 30.0 ],
+					"text" : "4"
 				}
 
 			}
@@ -127,14 +108,12 @@
 				"box" : 				{
 					"fontname" : "Trek TNG Credits",
 					"fontsize" : 24.0,
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 576.300005376338959, 90.0, 101.0, 32.0 ],
-					"text" : "decrypt",
-					"textjustification" : 1
+					"id" : "obj-55",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.399982750415802, 279.0, 33.0, 30.0 ],
+					"text" : "3"
 				}
 
 			}
@@ -147,23 +126,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.700013697147369, 578.0, 343.0, 32.0 ],
-					"text" : "script npm i node-wav --save -g",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-1",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.300005376338959, 36.0, 100.0, 32.0 ],
-					"text" : "encrypt",
+					"patching_rect" : [ 68.899982750415802, 279.0, 320.0, 32.0 ],
+					"text" : "encrypt \"Hello from Max!\"",
 					"textjustification" : 1
 				}
 
@@ -176,7 +140,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.800005376338959, 111.0, 33.0, 30.0 ],
+					"patching_rect" : [ 15.399982750415802, 227.0, 33.0, 30.0 ],
 					"text" : "2"
 				}
 
@@ -189,21 +153,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.800005376338959, 68.0, 33.0, 30.0 ],
+					"patching_rect" : [ 15.399982750415802, 184.0, 33.0, 30.0 ],
 					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 32.0,
-					"id" : "obj-59",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 51.300005376338959, 18.0, 103.0, 38.0 ],
-					"text" : "Setup"
 				}
 
 			}
@@ -216,8 +167,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 68.0, 441.0, 32.0 ],
-					"text" : "script npm install ascii-cats -g --save",
+					"patching_rect" : [ 53.899982750415802, 184.0, 457.0, 32.0 ],
+					"text" : "script npm install crypto --save -g",
 					"textjustification" : 1
 				}
 
@@ -237,23 +188,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 328.300005376338959, 169.400000929832458, 400.0, 220.0 ],
+					"patching_rect" : [ 187.799991071224213, 364.099999070167542, 400.0, 220.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Trek TNG Credits",
-					"fontsize" : 24.0,
-					"id" : "obj-65",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 216.000006914138794, 93.0, 32.0 ],
-					"text" : "ready",
-					"textjustification" : 1
 				}
 
 			}
@@ -266,7 +202,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.300005376338959, 111.0, 149.0, 32.0 ],
+					"patching_rect" : [ 225.899982750415802, 227.0, 149.0, 32.0 ],
 					"text" : "script stop",
 					"textjustification" : 1
 				}
@@ -281,7 +217,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.300005376338959, 111.0, 155.0, 32.0 ],
+					"patching_rect" : [ 68.899982750415802, 227.0, 155.0, 32.0 ],
 					"text" : "script start",
 					"textjustification" : 1
 				}
@@ -296,35 +232,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 51.300005376338959, 169.400000929832458, 224.0, 22.0 ],
+					"patching_rect" : [ 53.899982750415802, 334.5, 145.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script audio-encryption.js"
+					"text" : "node.script streams.js"
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -334,21 +254,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 72.0, 167.0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 78.399982750415802, 325.0, 63.399982750415802, 325.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -356,14 +262,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 368.800005376338959, 158.0, 60.800005376338959, 158.0 ],
+					"midpoints" : [ 235.399982750415802, 273.700000464916229, 63.399982750415802, 273.700000464916229 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -371,7 +270,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 78.399982750415802, 275.0, 63.399982750415802, 275.0 ],
 					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -382,39 +298,10 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-65", 1 ],
-					"midpoints" : [ 60.800005376338959, 198.200003921985626, 134.800005376338959, 198.200003921985626 ],
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "audio-encryption.js",
-				"bootpath" : "~/Documents/_airReam/n4m-supplemental/audio-encryption",
+				"name" : "streams.js",
+				"bootpath" : "~/Documents/_airReam/n4m-supplemental/streams",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -442,8 +329,8 @@
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontsize" : [ 32.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
