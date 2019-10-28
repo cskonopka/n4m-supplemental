@@ -49,7 +49,7 @@ app.post('/fromButton2', (req, res) => {
 	anypost(req.body);
 	anypost("from the butttttton222"); 
 // 	myObj = { "button": "true" };
-// Max.outlet(myObj);
+Max.outlet(req.body);
 	// res.end();
 	// res.send("You just called the post method at '/hello3333333'!\n");
 });
