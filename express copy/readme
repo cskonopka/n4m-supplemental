@@ -1,0 +1,28 @@
+
+____________________________________instructions__________________
+- download repo
+- cd to the repo
+- install packages using npm : npm i
+- run application using hotnode w/portnumber : hotnode app.js 9000
+- navigate to the application : http://localhost:9000/
+
+____________________________________architecture__________________
+[node-express-server]
+ app.js [head of the beast]
+ package.json [project information and dependency list]
+  - public
+    -- css
+      --- style.css
+    -- img
+      --- g.jpg
+      --- w.jpg
+    -- js
+      --- routes.js [application page routing]
+  - views
+    -- pages 
+      --- index.ejs
+      --- page2.ejs
+    -- partials [static piece of html]
+      --- body.ejs
+      --- head.ejs
+      --- nav.ejs

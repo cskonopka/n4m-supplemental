@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./include/head %>
+
+<body>
+    <% include ./include/nav %>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <!-- <form method="POST" action="/fromSlider">
+                    <input type="range" name="field3" value="this.value">
+                </form>
+
+                 -->
+                <form method="POST" action="/fromButton2">
+                    <button name="subject1" type="submit" value="fav_HTML">HTML</button>
+                    <button name="subject2" type="submit" value="fav_CSS">CSS</button>
+                </form>
+           
+                </div>
+            <div class="col">
+                Send form data to Max
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="test" name="field2">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col">
+                <form method="POST" action="/fromButton">
+                    <button type="submit" class="btn btn-primary btn-block">Button 1</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <% include ./include/scripts %>
+    <% include ./include/footer %>
+</body>
+
+</html>
