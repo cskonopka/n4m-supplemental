@@ -3,7 +3,7 @@
 </p>
 
 # bootstrap
-A static webpage of bootstrap compenets served by Express.
+A static webpage of bootstrap components served by Express.
 
 <p align="center">
   <img width="25%" height="25%" src="https://i.ibb.co/bN19dJd/Twitter-Bootstrap-Logo.jpg"/>  
