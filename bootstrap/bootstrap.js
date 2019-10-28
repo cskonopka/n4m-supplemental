@@ -12,11 +12,8 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
-// app.use('/things', things);
 
-// get
 app.get('/', (req, res) => {
-	// res.redirect("/index");
 	res.render('index');
 });
 
