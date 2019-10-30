@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/css/style.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+          <h1 class="display-2"><%= title %></h1>
+
+      </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col col-md-4 text-center">
+          <div class="btn-group" style="width: 100%;" role="group" aria-label="Basic example">
+              <button type="button" onclick="send2Max('z 1')" class="btn btn-secondary">ON</button>
+              <button type="button" onclick="send2Max('z 0')" class="btn btn-secondary">OFF</button>
+          </div>
+      </div>
+      <div class="col col-md-8 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('a '+this.value)"></button>
+      </div>
+    </div>
+    </br>
+    <div class="row align-items-center">
+      <div class="col col-md-4 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('b '+this.value)"></button>
+      </div>
+      <div class="col col-md-4 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('c '+this.value)"></button>
+      </div>
+      <div class="col col-md-4 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('d '+this.value)"></button>
+      </div>
+    </div>
+    </br>
+    <div class="row align-items-center">
+      <div class="col col-md-4 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('e '+this.value)"></button>
+      </div>
+
+      <div class="col col-md-4 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('f '+this.value)"></button>
+      </div>
+
+      <div class="col col-md-4 text-center">
+        <input class="form-control-range" type="range" onclick="send2Max('g '+this.value)"></button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+  <script src="/js/mySockets.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./include/head %>
+<form id='message-form'> 
+        <input name='message' type="text"placeholder="Message"
+                autofocus autocomplete="off"/> 
+        <button >Send</button> 
+      </form> 
+
+
+<body>
+    <!-- <% include ./include/nav %> -->
+</br>
+
+
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col col-md-12 text-center">
+                <form method="POST" action="/fromButton2">
+                    <button class="btn btn-primary btn-block" name="rg1" type="submit" value="fav_HTML">START</button>
+                </form>
+
+                <form method="POST" action="/fromButton2">
+                    <button class="btn btn-primary btn-block" name="rg2" type="submit" value="fav_CSS">STOP</button>
+                </form>
+            </div>
+        </div>
+        </br>
+        <h1>Blink speed: <span>0.50</span>hz</h1>
+        Fast <input id="slider" type="range" min="100" max="1000" value="1000"> Slow
+        <div class="row align-items-center">
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="range" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="range" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col col-md-3">
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <!-- <form method="POST" action="/fromSlider">
+                    <input type="range" name="field3" value="this.value">
+                </form>
+
+                 -->
+
+
+            </div>
+            <div class="col">
+                Send form data to Max
+                <form method="POST" action="/fromForm">
+                    <input type="test" name="field1">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col">
+                <form method="POST" action="/fromButton">
+                    <button type="submit" name="onebutton" class="btn btn-primary btn-block">Button 1</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <% include ./include/scripts %>
+</body>
+<script src="/socket.io/socket.io.js"></script> 
+<script> 
+var socket=io() 
+
+// connection with server 
+socket.on('connect', function(){ 
+console.log('Connected to Server') 
+
+}); 
+
+// message listener from server 
+socket.on('newMessage', function(message){ 
+console.log(message); 
+}); 
+
+// emits message from user side 
+socket.emit('createMessage', { 
+to:'john@ds', 
+text:'what kjkljd'
+}); 
+
+// when disconnected from server 
+socket.on('disconnect', function(){ 
+console.log('Disconnect from server') 
+}); 
+</script> 
+</html>
