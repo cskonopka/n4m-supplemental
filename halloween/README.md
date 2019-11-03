@@ -6,7 +6,7 @@
 A patch that changes the color of a LIFX bulb based on the chord sequences of the "Halloween" theme by John Carpenter.
 
 <p align="center">
-  <img width="25%" height="25%" src="https://i.ibb.co/WfM3WYm/n4m-lifx.png"/>  
+  <img width=74%" height=74%" src="https://i.ibb.co/v3v7Q98/n4m-halloween.png"/>  
 </p>
 
 ## Requirements
