@@ -5,6 +5,10 @@
 # node-reel
 The project demonstrates how to use the *node-reel* library to create cron jobs for sequencing operations in Max on a second, minute, hourly, daily, monthly and yearly basis.
 
+<p align="center">
+  <img width="74%" height="74%" src="https://i.ibb.co/QjbJm9V/n4m-nodereel.png"/>  
+</p>
+
 ## Requirements
 [node-reel](https://www.npmjs.com/package/node-reel)
 
