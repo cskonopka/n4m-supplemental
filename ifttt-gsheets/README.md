@@ -5,6 +5,10 @@
 # ifttt-gsheets
 The *ifttt-gsheets* patch is an example of how to send data to a Google Sheet using the IFTTT service.
 
+<p align="center">
+  <img width="74%" height="74%" src="https://i.ibb.co/J3pMrpv/n4m-ifttt.png"/>  
+</p>
+
 ## Requirements
 [ifttt-webhooks-channel](https://www.npmjs.com/package/ifttt-webhooks-channel)
 
