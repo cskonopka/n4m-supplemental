@@ -5,6 +5,10 @@
 # lifx
 The *lifx* patches demonstrate how to control an individual LIFX smart bulb using Node for Max using the *lifx-http-api* library.
 
+<p align="center">
+  <img width="74%" height="74%" src="https://i.ibb.co/VSQBX9M/n4m-lifxcore.png"/>  
+</p>
+
 ## Requirements
 [lifx-http-api](https://www.npmjs.com/package/lifx-http-api)
 
