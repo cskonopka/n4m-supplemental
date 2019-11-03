@@ -20,7 +20,7 @@ A static webpage of bootstrap components served by Express.
 
 ### Desktop browser
 <p align="center">
-  <img width="47%" height="47%" src="https://i.ibb.co/KWv5JMF/n4m-bootstrap-webpage.png"/>  
+  <img width="74%" height="74%" src="https://i.ibb.co/KWv5JMF/n4m-bootstrap-webpage.png"/>  
 </p>
 
 ### Mobile (vertical)
@@ -30,5 +30,5 @@ A static webpage of bootstrap components served by Express.
 
 ### Mobile (horizontal)
 <p align="center">
-  <img width="47%" height="47%" src="https://i.ibb.co/Yk3hQfg/n4m-bootstrap-mobile-horizontal.png"/>  
+  <img width="57%" height="57%" src="https://i.ibb.co/Yk3hQfg/n4m-bootstrap-mobile-horizontal.png"/>  
 </p>
