@@ -19,10 +19,16 @@ A static webpage of bootstrap components served by Express.
 ## Examples
 
 ### Desktop browser
-<img width="47%" height="47%" src="https://i.ibb.co/KWv5JMF/n4m-bootstrap-webpage.png"/>  
+<p align="center">
+  <img width="47%" height="47%" src="https://i.ibb.co/KWv5JMF/n4m-bootstrap-webpage.png"/>  
+</p>
 
 ### Mobile (vertical)
-<img width="47%" height="47%" src="https://i.ibb.co/4f5tMM5/n4m-bootstrap-mobile-vertical.png"/>  
+<p align="center">
+  <img width="47%" height="47%" src="https://i.ibb.co/4f5tMM5/n4m-bootstrap-mobile-vertical.png"/>  
+</p>
 
 ### Mobile (horizontal)
-<img width="47%" height="47%" src="https://i.ibb.co/Yk3hQfg/n4m-bootstrap-mobile-horizontal.png"/>  
+<p align="center">
+  <img width="47%" height="47%" src="https://i.ibb.co/Yk3hQfg/n4m-bootstrap-mobile-horizontal.png"/>  
+</p>
