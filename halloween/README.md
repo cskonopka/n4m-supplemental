@@ -5,6 +5,10 @@
 # lifx-halloween
 A patch that changes the color of a LIFX bulb based on the chord sequences of the "Halloween" theme by John Carpenter.
 
+<p align="center">
+  <img width="25%" height="25%" src="https://i.ibb.co/WfM3WYm/n4m-lifx.png"/>  
+</p>
+
 ## Requirements
 [lifx-http-api](https://www.npmjs.com/package/lifx-http-api)
 
@@ -22,3 +26,6 @@ client = new lifx({
 - Click *script start*.
 - Turn on the DAC.
 - Press play.
+
+## Demo
+[YouTube](https://youtu.be/RUweF_T66Sc)
