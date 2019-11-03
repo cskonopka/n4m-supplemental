@@ -29,5 +29,4 @@ Max.addHandler("anything", (input) => {
     // anypost(input);
     Max.outlet(input);
 
-
 });

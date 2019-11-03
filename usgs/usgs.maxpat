@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1510.0, 1062.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 262.0, 537.0, 29.5, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 6,
 					"id" : "obj-141",
@@ -383,14 +395,14 @@
 					"patching_rect" : [ 584.0, 593.706298999999944, 136.0, 35.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -70 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ -70 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -416,14 +428,14 @@
 					"patching_rect" : [ 584.0, 487.706298999999944, 54.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 10000.0,
+							"parameter_initial" : [ 440 ],
 							"parameter_shortname" : "flonum",
 							"parameter_type" : 3,
 							"parameter_mmin" : 10.0,
 							"parameter_longname" : "flonum",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_mmax" : 10000.0,
-							"parameter_initial" : [ 440 ]
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -508,14 +520,14 @@
 					"patching_rect" : [ 735.300005376338959, 783.0, 136.0, 35.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -70 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ -70 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -594,24 +606,24 @@
 								"absolutepath" : "sample3.aif",
 								"filename" : "sample3.aif",
 								"filekind" : "audiofile",
-								"selection" : [ 0.13, 0.177 ],
+								"selection" : [ 0.047, 0.094 ],
 								"loop" : 0,
 								"content_state" : 								{
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"originallength" : [ 0.0, "ticks" ]
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
@@ -748,7 +760,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 619.300005376338959, 181.206298999999944, 320.0, 40.0 ],
-					"presentation_linecount" : 2,
 					"text" : "usgs 2015-10-31 2015-11-01",
 					"textjustification" : 1
 				}
@@ -871,7 +882,7 @@
 					"patching_rect" : [ 43.300005376338959, 578.0, 516.0, 190.0 ],
 					"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"setminmax" : [ 0.0, 10.0 ],
-					"size" : 431
+					"size" : 293
 				}
 
 			}
@@ -992,6 +1003,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1048,6 +1061,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -1276,6 +1296,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-43", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-137", 0 ],
 					"order" : 0,
 					"source" : [ "obj-45", 0 ]
@@ -1374,6 +1401,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
 					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -1484,9 +1518,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-53" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-89" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-54" : [ "flonum", "flonum", 0 ],
+			"obj-89" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-53" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
 			}

@@ -1,0 +1,400 @@
+Name,Description
+Ansaphone,Create a telephone program for recording telephone messages.
+ScopingVoice,"Get Periscope .hls files, rip them using ffmpeg and use with Jitter."
+Color Chords,Play a chord and change the color of the room.
+Kinect Room Ballons,"Create 2 rooms, a Kinect and a balloon drop above the room controlled by an Arduino. When a user performs the correct body motion, the balloons will drop in the opposite room."
+Warehouse Panner,"In a warehouse, place a speaker in each corner of the space with a speaker connected to a stepper motor with a Wi-Fi enabled microcontroller. Using an ultrasonic sensor, control the panning in the space based on the location of a human in the space."
+Party Chat,Create a private group chat app that sends words from the front-end to Max and convert each phrase into MIDI.
+Twitch Chat Feedback,Create a Twitch stream and create a pipe for sending characters from the chat to Max. Convert into parameters for an audio sampler controlled by the viewers of the stream.
+Webspace Blocks,"Create a sandbox that has 4 basic shapes. When a user moves the shape, it moves the audio in a 3D space."
+Sound Emails,Record an audio sample. Play a secret chord progression to upload the audio sample and email to a friend.
+Jitter Imgur Uploader,Create a still image or .gif using Jitter. Save the file to S3 and upload the visual content to Imgur.
+Kinex Playset,"Buy the KiNEx rollercoaster set, construct it and then add piezos to the structure in various plays. Connect the piezos to MSP via an audio interface. Process the piezo audio, record the audio and then upload it to Soundcloud or Archive.org."
+"Receive, Glitch, ReUp","Receive an email with an image attachment, download the attachment. Open the attachment in Jitter, process the image and upload it to an image service (Imgur) and email the image back to the sender."
+Interactive Twitch Music,Sonify a Twitch chat during a live stream. Each user would be a different instrument. Re-broadcast the audio stream into the video stream to create a consistent Internet controlled feedback loop.
+Pizza Chords,Play a specific chord (like the Goonies) and it will order a pizza. Different chords = different pizzas.
+Sunlight IoT Instrument,Connect a photocell to a microcontroller that is IoT enabled and send data back to Max to sonify the data.
+Weather Filters,Use a weather API to create the parameters of a filter and then export that as a specialized VST.
+Space Commander (Reverb edition),Create a hardware commander space station with switches/levers that control when a solenoid strikes a metallic material within a space to create natural reverberations.
+Ambient Tissue Box,"Based on the movement (gyro), conductivity (touch) and placement within a space (on/off table), ambient music shapes by the emotions of a human."
+Badminton Music,Get 2 Badminton rackets. Add an IMU and Wi-Fi module onto the racket to measure how each user plays the game of Badminton. Relay the data to Max and visualize the data projecting onto the court. The motion would also be sonified.
+Oblique Strategies Machine,Develop an algorithmic audio engine that periodically visualizes the text of an Oblique Strategies card.
+MIDI Database,Create a utility for logging MIDI experiences and sequences for performances.
+P2P Life Experience MIDI Symphony,P2P chat interface for sharing life experiences that are then turned into MIDI compositions layered vertically to create a symphonic piece.
+WAN Night Leaves,Create a WAN program for managing Nanoleaf units between skyscrapers. An injection of real-time foot traffic into each building could determine the base glowing structure. Use a weather APIs to color each skyscraper and use OpenCV to create a viewing feedback loop to do a predictive analysis on the opposite skyscraper. 
+Node Networks,Create a workflow for interconnecting multiple computers for simultaneous AV development
+Internet Pedals,Use SMS to remotely a series of guitar pedals using arduivis. Each pedal uses servo motors to control the parameters of the pedal in realtime.
+Blurry Timelapse,Create a timed schedule for taking photos of the skyline. Take a daily snapshot and datamosh/blur the image over a 24hr period to create a larger landscape. Repeat daily. Connect the processed video to a YouTube stream via OBS and Syphon. A localized sensor array controls the parameters of the blurring algorithm.
+Group Think Biometrics,"Create a custom wearable that can send data to Max. Log the biometrics, visualize the data. Project a film in a separate location to track the biometrics of users in another room."
+City Synth,Track movement around a section of a city and send it to a central hub. The data controls an ambient audio stream broadcasted live via a streaming service available to everyone in the city.
+WebMidi Octatrack,Control an OT unit via WebSockets and wedmidi.
+n4m Hardware trigger,Create a specific hardware unit for sending triggers to a server.
+OpenCv Claw Machine,Use OpenCV in a large event space and create a grid. Based on where people are standing as a team and work together to drop the claw to get a prize.
+Gamer Glitch REDUX,"Create a video stream of a public space (or a gallery) and overly an evenly spaced grid. Each section of the grid adheres to a button press when a person stands in the grid for 10 seconds. The location of actual humans within the space determines the triggering pattern of a procedural audio algorithm. Simultaneously, each user can trigger visual glitch processing (Jitter) in adjacent squares to confuse other players. The team that can figure out the pattern will unlock a new visual design and the game will start again. Broadcast the event on Twitch and use Twitch chat to augment parameters of the game without telling the attendees. "
+WebDMX,Web interface for controlling DMX lights in Max.
+Tic-Tac-Toe (The Air Version),Play Tic-Tac-Toe using hand using hand gestures using the Leap and send requests to a central computer that is projection mapping the results.
+API Plugin workflow,Develop a workflow for creating plugins using JUCE that has the ability to receive parameter definitions from a specific API.
+Pet Portraits,"Using a microcontroller, create a camera trigger that takes a handful of photos of your pet when they reach the bowl. Take a handful of pictures and use image recognition to determine the best image. Post the image to Twitter."
+BIrd Recorder,"Develop a modular piece of equipment for recording birds in the wild based on a schedule. Once captured, upload the audio to a cloud server and send a trigger to a central patch using a serverless function. Update the list of samples and create an environmental audio piece over a single season. Or stream the audio in real-time to Max and create a looper. The goal is to create a hardware prototype that can exist within a forest using solar for power with a battery backup."
+Bicycle Clock Sculpture ,Create a bicycle sculpture with a chainring. A stepper motion controls the motion of the chainring. Connect the motor to a Wi-Fi enabled IoT device and send messages to move the wheel like a clock.
+Sonification tools,Create a patchbook for exploring the possibilities of sonifying data.
+The Cat Wall,"Create a multi-screen wall of cat Gifs sourced from Giphy that rotates daily. Receive the images, plot them into a grid using Jitter and create wavetables for each image."
+Grateful Dead collage machine,Poll Archive.org for Grateful Dead shows and receive the top 25 live songs of all time. Use Javascript to generate a new groove~ object for each audio link and collage together.
+Remote Parameter Tools,Create a series of tools that help artists create WAN installations and experiences.
+Water Tube Resonators,"Create a circular base and place several tubes of various heights in a circle, think of organ pipes. Fill each tube with a different water height. Connect piezos to each tube and place solenoids under each tube. Use the current rainfall of a region to trigger various tubes and process the sounds within MSP. The current rainfall will determine the time and velocity of the sequence."
+The Collection Box,"Create 2 wood square panels. Create a square with plexiglass walls on one panel and place the 2nd panel under the first, supporting the weight with springs. Underneath the board, add an IMU that can send data to Node via WiFi or cellular. Place outside, collect rainwater and use real-time data to control a composition based on water. "
+PaintingWithTheInternet,"Find a spring and add conductive material to the design to create various locations of interactions. When a user moves the spring, it sends data to Max via serial and then uploads the packet to a browser. The browser is running a WebGL patch. The interaction can also be autonomous. The goal is to create a room with a circular table that has 5 springs people use as a team to paint or try to link using twine and conductive rubber."
+Rippa Remix,"Rip an audio file from YouTube using yt-dl, chop up the track and then upload to YouTube or relative service."
+Car Synthesizer,Connect an OBD sensor to a car and stream real-time data to Max using Bluetooth. Select a sound template to make your car sound like a rocketship or horse & carrage.
+The Sound of Pho,Layer a set of chopsticks with conductive material and eat Pho. Mic yourself eating and process the audio of the slurping. Host an event and do this with at least 25 people.
+n4m Authy,Create an Authy workflow for adding security to Max patches for safety and for fun.
+IRC Bot,Develop an IRC bot that sends musical puzzles to random users.
+Slack audio collaboration,"Get a group of users to upload random audio tracks to a Slack chat. Then, after a determined amount of time, rip audio down and create a new track using FFMPEG with n4m. Then make the track available in Max."
+Cryptographic Max,"Encrypt and decrypt messages using ""crypto""."
+anonymous crypto MIDI,Provide a pipeline for users to send encrypted MIDI messages. Use a custom key to decrypt the MIDI message and piece together into a new composition.
+Visual Refactor,"Using an image API, pull several images from a webpage and save them. Load them into Jitter, process and layer them on each other to create a singular image. "
+Watch the lake for ducks,Use OpenCV to track the daily movement of ducks by a lake. Save data and push to a cloud database. Visualize the data and analyze the daily movements of the duck and create a daily synthesizer.
+Vimeo Grabber,Use n4m to get video links from Vimeo so they can be processed in n4m.
+RFID web verification,Create an RFID card system that asks for verification using Authy via Node.
+Hidden Music Cards,"Create a series of cards that have MIDI notes. When swiped, the MIDI the Arduino reads the MIDI and sends it to a patch running node. Once received, the MIDI will play. People within a space can swipe their RFID at anytime creating a large-scale collage composition."
+Dronin',Control a Parrot AR Drone using a Leap Motion.
+Dronin' (brains),Control a Parrot AR Drone using a Mindwave brain interface
+Bluetooth Gateway,Control a Parrot AR Drone using a Mindwave brain interface.
+Spinning speaker columns,Create a column with a base that has 4 wheels that allow circular movement. Add a large array of speakers connected to an audio sampling program. Use a microcontroller + Bluetooth to receive mute and play messages from the central performance controller. The controller would be accessible to users so they can sculpt audio in a space while other humans are within the space. 
+Expert Node Sleepers,Develop a patch for the Expert Sleepers modules for sending CV to a web endpoint
+Car Control,Add a microcontroller with WiFi to an RC car. Hack the cars hardware and control the car remotely using Max.
+cmdline Max backend,Integrate cmd-line to Max using a Node library.
+MaxSphereo,Control a Sphereo using HTTP requests.
+n4m Cylon,Create various examples Cylon.js robotics library.
+ASCII Art Scanned Synthesizer,Create ASCII art from text or an image.
+ASCII Cats Synthesis,Create a synthesizer based on the design of an ASCII cat.
+Max 2 Webcanvas,Create a workflow for using the <canvas> tag.
+Audio Encryption,Use the crypto library to encrypt and decrypt audio buffers.
+Audio Steganography,Create audio tracks with hidden messages.
+Group Sound Puzzle,“Simon” style game that has a microcontroller running Max. Intervalic button sequences create ambient pieces by working together as a group. There are ultrasonic sensors around the perimeters to detect users.
+Generative Data Curves,Use an API to generate multi-layer automation envelopes.
+OpenCv n4m,Create examples for OpenCV.
+Controlling servos,Create an example of how to control servo motors from the web.
+Controlling stepper motors,Create an example of how to control stepper motors from the web.
+LED strips,Create an example of how to control LED strips from the web.
+Conductive material,Create an example of how to use conductive material for designing remote interfaces.
+Audio feedback machine,Create a hardware prototype that triggers audio based on an event from n4m. Each prototype will have a microphone next to the hardware sampler. Record the audio using MSP and time-stretch the audio sample. Design an algorithmic clock system that will trigger remote audio samples. Continue to layer audio files as they are received.
+Nodeduivs,"n4m version of arduivis, serial communication through node."
+El Wire Sign,"Control the flicker of a sign remotely, sync to music."
+Music Planter,Remotely send data to a central machine that records streams and sonifies the data. Observe trends and create scheduled watering times. Stream on the web and create an interface for data observation.
+Sheets in the wind,Hang a sheet vertically and behind the sheet place several small computer fans. Use the microcontroller to toggle each fan to simulate the wind moving the sheet. Use a webcam to capture the movement and process in Jitter.
+audio within image,Hide an S3 link within an image. Hidden parameters can dictate a new composition context.
+escape room design,Use n4m as a communication hub for an escape room project.
+Streaming audio,Sending MSP audio packets to Node and reconstructing in the browser.
+OSC node controller,Develop a workflow for OSC control over a large network to extend the ability to control cloud applications.
+FFmpeg Collage machinea,Record individuals in a space and generate algorithmic conversations using FFmpeg. New conversations can be heard when the user pics up a rotary phone receiver.
+MIDI database,Develop a database for MIDI clips. Design in Max and upload from Max.
+Servo manager,Develop a workflow for managing a large array of servo motors over a WAN.
+LED strip manager,Develop a workflow for managing a large array of LED strips over a WAN.
+Cellular IoT hub,"Using a microcontroller and a cellular modem, create an IoT hub for collecting data from remote locations."
+Web MIDI Submissions,Use a form tag to send MIDI notes from the client to the server and then to Max.
+Encrypted MIDI Lock,Create a MIDI sequence and divide it into four parts. Encrypt and generate a key for each sequence. Use the two parts to create a musical scavenger hunt.
+Survey MIDI Music,Create a form and use the information submitted to create MIDI notes and send the packets to Max immediately. Expose URL to the web and learn about internet opinions via MIDI.
+Web browser quad synth,Create a quad synthesizer that is only functional once 4 users are present.
+DNA audio filters,Start with an Allpass filter and use DNA sequences to EQ as source source.
+File upload looper,Use the file-upload example to stream audio remotely and create a series of endless loops. Use Javascript to generate new audio sections and loop the content as it comes in.
+Worldwide Rain,Use the file-upload looper idea to create an internet collaboration with users around the world sending in audio files of rain.
+Mechanical Music maker,"Develop a machine program that creates sound based on the extraction of acoustic phenomena using household items. Using a microcontroller, Max would interface with the materials using a variety of motors and sensors."
+String plucker,"Remotely controlled servo motor that plucks a string that is closely miked, creating audio feedback."
+Serial Communication,Create a series of examples demonstrating the use of Serial communication with Node.js
+PDF Generator,"Create a Jitter program that can create abstract imagery using OpenGL, save an image, and then create a PDF."
+PDF to Fax,"Using the PDF Generator, export a document for faxing."
+Fax Face Cam,"Connect a webcam to a fax machine, take pictures of individuals who walk up to the Fax machine, create a PDF with an image and then fax to another fax machine in the arena."
+Web+Cams=Webcams,Create examples for webcams in and out from node and image extraction.
+N4M Markdown,Develop a markdown format for Visual Code Studio
+EchoNest Connectors,Create a series of examples using the EchoNest API.
+Generative Web Pages,"Using Express, develop an automation protocol for algorithmically generating webpages in the style of Windows 95. Each page would also play a generated piece of vaporwave music."
+Simple Env,Do a walkthrough of adding a .env file to your node projects.
+Max Containers,Experiment with containerizing Max applications using Docker.
+Max Whales,Create a composition using only whale sounds and whale migration data to create parameter presets.
+Node.js + JUCE,Research how to integrate Node with JUCE.
+GENshare,Export workflow for sharing gen~ plugin to GitHub.
+Save-state,Developing a “save-state” design for parameter presets.
+PixelSheets,Use Google Sheets to create individual pixels that can be compiled into a single matrix for  
+Zapier Examples,Create examples using Zapier.
+Microsoft Flow Examples,Create examples using Microsoft Flow.
+IFTTT Examples,Create examples using IFTTT.
+USGS granular synthesizer,Acquire earthquake levels from a specific year and use it to determine dentiy parameters of a granular synthesizer.
+8 Ball,"Create a handheld device using a Latte Panda and IMU that runs Max. When a user moves the device in a specific pattern, it will ask an introspective 8-Ball style question."
+MSP to Web Audio,Develop a workflow for sending audio from MSP to a Web Audio buffer.
+Hidden AR Tags,"Create a box with an ultrasonic sensor and an AR tag hidden with a liquid crystal valve. When a person stands in front of the ultrasonic sensor for 5 seconds, the liquid crystal valve will reveal an illuminated AR tag. The AR tag reveals information about the current experience."
+Learning about the trees,Using a microcontroller to curate an experience within a forest where the user can learn about various types of trees and the environmental surroundings. Using an ultrasonic sensor and button press combination will fetch the most recent video link. The liquid crystal valve to display an AR marker. The marker is a 3D rendering of a tree and displays a caption. It is a modular museum plaque.
+modular museum plaque,A plaque for displaying content remotely based on the current exhibit
+QR Hidden AR Markers,Revealing an AR tag by scanning a QR code and answering a question that will send data to a Max server.
+Responsive mobile GUI,Create a series of examples of responsive front-end designs that connect to Max.
+Static webpage Example,Create an example of a static web page using various frameworks.
+Basic Node.js Examples,Create examples of built-in Node libraries.
+Touchscreen model train controller,Use a series of microcontrollers with Wi-Fi for creating a large setup of electric trains. Incorporate a touchscreen for controlling the speed and track direction of the train sets.
+Touchscreen Commander,Control a network of programs in remote locations via the Internet.
+Quote synth,Fetch famous historical quotes and create an AV experience based on the information in the quote.
+Sentence sequencer,"Use famous quotes to generate sequence patterns, time signatures, and randomized chance."
+Graphic sound synthesis,
+Interactive Jitter Glass,"Using a large touchscreen, create a program that uses physics-based parameters to create 3D visual experiences. The more users the easier it is to sculpture."
+Time-based Data Sculptor,"Start with a base 3D shape (sphere, cone, box, etc) and receive a single parameter daily using a cron job. The new parameter alters the shape, export the design, and upload to a service. "
+Reverb migrations,Create a microcontroller sampler that generates audio feedback and adds an amount of reverb based on the migration patterns of geese.
+Data filters,Create a series of examples that explore using data sets are filter presets.
+Convolution Impulse Creator,Develop an UX web experience for generating new .wav files from scratch. 
+Shifting loudspeaker configuration,Control a series of speakers using high-torque motors connected to scaffolding. Use Node to control the pan and tilt of each loudspeaker within the array.
+Panning throug the cloud,Develop a single-page web application hosted on Azure that can allow a user to control the panning location of speakers within an arena.
+Acoustic Ambient designer,Use acoustic happening within a space to create envelopes of slow moving waveforms.
+Tactile rhythm collab,Develop a large tactile interface where users work together to develop rhythms together based on the combination and time held.
+Wiimotes Examples,Create examples for Nintendo WiiMotes
+Leap Examples,Create examples for the Leap Motion
+Magic Leap Examples,Create examples for the Magic Leap
+Vive Examples,Create examples for the Vive
+Unity Examples,Create examples for Unity
+Unreal Examples,Create examples for Unreal
+TouchDesigner Examples,Create examples for TouchDesigner
+MIDI Database for ML & AI,"Generate a database of daily MIDI passages. After 6 months, use Machine Learning to create predictive MIDI passages."
+MIDI Controller Database ,User created database of MIDI controller layouts for Max
+Data Envelope examples,Create examples of how to create audio envelopes using API data.
+Data Waveform examples,Create examples of how to generate audio waveforms from data.
+Deterministic Web Experiments,Create a series of deterministic experiences that utilize collective web browser timed composing
+RFID Grocery Experiences,"Create MIDI parts and add them to a series of RFID cards. In a space, mimic the look for a supermarket. When you go through the checkout and swipe a card, the MIDI sequence triggers a series of physical happenings in the space."
+Computer Music History,Create an API for learning about the history of Computer Music
+Audio DSP trading cards,Create an API for learning about the building blocks of audio DSP.
+TTS Tweet Scanner,"Read tweets form a popular hashtag, read in Max via TTS and process the audio."
+TTS M4L Plugin,Create a plugin for acquiring words from the web for text-based sampling applications
+Node gestures,Develop workflows for integrating motion sensors into Node.
+NASCAR spiral visualizer,"Using NASCAR API data, generate interwoven spiral visualizations."
+Data clothing,Integrate various motion capture tech to a piece of clothing and use the motion data to control performance parameters.
+Mouth cage,Develop a muzzle with microphones inside with motion sensors attached. The audio generated by the microphones is processed by various movements of the performer. 
+Music notation browser,Create MIDI notation program for the browser that can be sent to Max.
+M4L internet wind panner,"Using a weather API, use wind data to determine the panning position of audio tracks."
+Composition machines,Develop a Wi-Fi hardware attachment for triggering acoustic treatments
+Node Automata,"Examples of cellular automata in Node, send the data to Max."
+Probability table creator,"Using a Sports API, generate probability tables for sequencers"
+Neural Networking,Develop individual nodes running neural network programs and weave together a collective learning experiences by networking several devices within an environment.
+Node for Teensy,Create examples for the Teensy
+Node remote pitch bender,"Using a stepper motor connected to a keyboard pitch bend, use a glove with an IMU to control the movement of the pitch bend."
+robotic glass sculptor,"Create a sculpture that of suspended glass pieces using a cylindrical platform. Using a stepper motor, rotate the platform and shine focused light through the sculpture. Use a webcam to capture the light patterns and process in Jitter."
+Aviary (bird synthesis),Hang a birdfeeder with microphones inside and watch the feeder using a webcam. Use OpenCV to track birds that use the bird feeder. Sample the birds periodically and play back the audio to the birds. It is a generative bird feedback designer.
+Audio perception IMU,Create a custom set of headphones with an embedded IMU. User movements dictate the audio processing being streamed into the headphones.
+Move noise binaural,Generate binaural patterns based on gravitational patterns of the earth.
+OpenCV Squirrel dronemaker,Use OpenCV to track squirrels in a yard and use the data to determine the parameters of a drone machine.
+Distortion Designer,Use fashion runway dress images to determine the data design of a distortion filter.
+International Human Chess,Create a 2-player chess program that tracks movements within a physical space and relays it to another physical space. Humans act as chess pieces and trigger movements.
+M4L Airplane API CV Controller,Use a flight tracking API to create an M4L parameter controller.
+Google Hangouts Hat to MIDI,Use MIDI to trigger Google’s Capping API.
+Wavetable crossfading,Create synthesis wavetables using historical country facts and design an algorithm to cross-fade between datasets with similar traits.
+Room temp heat synthesizer,Design a synthesizer that sonifies the temperature of every room in a hotel.
+Google Chromecast,Research the possibility of connecting Google Chromecast.
+Sound detection,Trigger security lights based on movement and pump out hard techno.
+BLE 2 BLE infinite jitter pong,Develop a program that uses two Max sessions to send Pong messages back and forth using BLE and Jitter.
+Node influences vintage screensaver,Generate a “vintage” screensaver and Jitter. Use n4m to permute between designs based on world news headlines.
+Scrolling ticker,Create a scrolling stock ticker that is overlay vintage images of wall street.
+QR sample/image sharing,"Create audio samples and upload them to a cloud service. Using the cloud link, generate a new QR code. Share with people."
+Hidden audio flyer,Create an OpenGL design in Jitter and export an image. Break down an audio sample and embed it into the image. Take a snapshot and re-compile the audio file.
+N4M Proxy debugger,Create a n4m proxy for debugging Node.js using verbose modes.
+UDP examples,Create UDP examples
+TCP examples,Create TCP examples
+Node for NBA Jam,Create a workflow for controlling an emulator playing NBA Jam.
+interactive NBA Jam,Use a webcam to track the movements of humans in a supermarket and use the data to play NBA Jam.
+interactive Fifa,Use a webcam to track the movements of humans in a supermarket and use the data to play FIFA.
+Basic slider/knob interface,Create examples of web browser interfaces with WebSockets.
+Water tornado controller,Create examples of web browser interfaces with WebSockets.
+XY drawing,"Using a hardware XY plotter, create an abstract drawing by combining 3 different APIs."
+Deterministic hardware pieces,Create a series of deterministic hardware pieces that are dismantled by controlling a series of sliders over the web in specific regions simultaneously.
+breathing mountains,"Using data from remote mountain tops from around the world, develop a synthesizer that sonifies the data. The data would is visualized and projection mapped onto a 3D printed mountain."
+Milli Vanilli Rain Alarm,"Check for daily rain updates using a weather API. When it rains, your alarm clock changes from a traditional sounding alarm clock to Milli Vanilli’s “Blame it on the Rain”."
+Sledgehammer,Control automated sledgehammer using the web. Stream the destruction of hardware devices that have embedded piezos. Process the audio and stream with the video source.
+Tswift Album Feedback Processor,Use T-Swift tweets to define pitch-shifting and time-stretching parameters of Taylor Swift tracks. Tweet the processed sections to Taylor Swift.
+Pasta Processor,"Apoxy bowl with embedded piezos, fill with pasta sauce and each pasta out of the bowl. Send the data to a server and send it to Jitter, create impressionistic style digital creations in the style of Andrew Benson. Ideally, the piezos connect to a microcontroller so everything you eat is visualized. "
+Price gun sonification ,"Scan barcodes and food prices, log to the cloud and use the data to generate a series of granular synthesis pieces."
+Hardware delays,Use Max to control a series of hardware relays.
+Magnetic Beard,Toggle various magnets that shape the metal shavings to create various facial hair configurations.
+Magnetic Stairs,Control magnets that augment a sculpture in real-time using Node to toggle a variety of power supplies. Users can trigger sculpture changes by walking up and down a flight of stairs.
+CSV data transfer,Create a program for connecting a CSV to Max.
+cake camera synth,Use a webcam to track the formation of a cake and sonify the experience.
+prototype RPI neural network,Create an IoT neural network for prototyping responsive interactivity in large environments.
+copper pieces holding hands,"Create a conductive piece of material using copper and velostat. Holding hands, two people can generate data as they focus on their connection together. Use the data to synchronize two sinewave generators."
+ultrasonic space visualizezr,Use a series of ultrasonic sensors to map the space of a room and update a webpage with the volume of humans in a space.
+email to MIDI,Email MIDI sequences.
+Fax to MIDI,Fax MIDI sequences.
+Talking doll voice,"Find an Elmo, hack the voice chip and control the audio using Max."
+Robotic Empathy designer,"Use Jitter to take visual snapshots of conversations and place the photos in a database. Run the images through machine learning algorithms to understand emotions. Then, take the results and apply them to a 3D robotic face in Jitter that can mimic your emotion."
+Backend Blockchain,Create a blockchain example that runs in Max.
+MIDI blockchain,Develop a MIDI blockchain.
+Film cover mashup,Use the OpenIMDB API to get 2 random posters and create a new poster using a parameter workflow designed by other aspects of the source films.
+Water node communicator,Use water movement determined by lasers through a clear pipe to communicate new parameters for audio processing. Music processed by water.
+Door sensors,Use door sensors to trigger sounds in adjacent rooms to create confusion.
+SFX Haunted House,Create a network of WiFi nodes that trigger scary sounds that are piped into a haunted house.
+Jitter pumpkin face,"Using a microcontroller, create a face visualization that fits in a pumpkin. Control the various facial expressions when a person rings the doorbell."
+SFX car engine,"Connect an OBD sensor to your car and link the audio to Max to your car’s stereo via Bluetooth. Based on the speed of your car, change the intensity of the audio in Max. Using this technique, we can make a car sound like a spaceship or a locomotive."
+Max network observer,Create a program that observes network traffic between microcontrollers. 
+IoT WiFi Projects,Create a series of IoT n4m examples.
+Bicycle intefacing,Use bicycle power to generate soothing imagery and use heartbeat sensors to rhythmically lock into breathing patterns
+Rowing motivation,^
+Payphone Controller,"Use a pay phone to control a machine composition using a ""pay-to-play"" scheme to mimic corruption."
+Audio sample pyramid,Generate a single audio piece using a sample pool using a pyramid scheme design.
+Chuck Norris Quote Techno Remix,Get Chuck Norris quotes and create a techno mashup
+Motivational Text Landscape,Create an slow moving visual landscape that mimics the sun and overlay motivational words
+3D object reader,Upload 3D object to the browser and read in Max.
+Historial ERA Envelope designer,Use a baseball API to get historical ERA data from various pitchers to create envlopes.
+Wikipedia Sound Designer,Use wikipedia to create unique sounds.
+Historical battle filter designer,Use historical battle data to create a series of filters.
+Cloud Max Web App,Create and serve a Max project in the cloud using Azure or AWS.
+PBX,Create a business telephone system controlled by Max and plays audio when the phone is picked up.
+LED light sequencer,Sequence a series of LED strips using local traffic data.
+WebRTC Examples,Create WebRTC examples
+Google Translation,Create Google Translation examples
+upload to giphy,Create an upload to Giphy example
+Xenakis Web Sound Designer,Develop a webpage for generating MIDI using various Xenakis compositional techniques.
+Remote Emulator control,Create examples for remote control of video game emulators.
+Wavetable Designer,Create a series of examples for generating wavetables from API data.
+Interactive Wave Terrain Synth,Create a WebGL interface for controlling a wave terrain synthesizer in Max.
+Life Physics ,Use a series of sensors to measure physics in nature to determine the workflow of Max patches.
+Coffee pour synthesizer,Use a series of sensors and a webcam to get various data points from a single-pour coffee setup.
+Archive.org wavestacking,"Design a program for ripping audio content from Archive.org, pool the samples in Max and then stack all of the files to generate a single piece."
+Grayfolded,Replicate the Grayfolded album that remixes every live Dark Star performance from the Grateful Dead.
+Traffic panning,Use traffic data to generate audio panning schemas.
+Amazon package notification,Create a program for notifying you when an Amazon package arrives. Play a specific audio file.
+FFmpeg scripting,Create workflows for FFmpeg scripting experiments. 
+FFmpeg stutter,Create a program for generating stutter edit audio remixes.
+Prank sampler,Design a prank call machine that can send audio through Max through a telephone call using WebRTC and Twilio.
+Latte Panda Utilities,Create a series of examples for Max on the Latte Panda.
+Latte Panda processor,Create a standalone unit for processing audio using the Latte Panda
+Fish casting research,Use an IMU connected to a fishing rod to create whispy particle patterns in Jitter.
+Saebo Visualizer,Develop a program for visualizing hand movements from the Saebo flex.
+Muscle recorder ,Create a program for recording muscle movements and create a database for clinical research.
+Muscle info database, Develop a database of muscle recordings.
+Bash connector,Create a Bash connection for low-level scripting in Max.
+ImageMagick,Create examples of ImageMagick
+Daily web drawer,"Using cron jobs, create daily abstract images based on news headlines from around the world. Automatically generate a website and a QR code connected to the webpage."
+Cron uploaded,Create a workflow for scheduled uploading using cron jobs.
+Controlling WebGL,Create a workflow for controlling WebGL with Max.
+Cloud granular synth,"Develop a series of static web pages, each representing a set of parameters for a granular synthesizer. Audio is broadcasted to the web and collaboration creates more complex sounds."
+SMS sampling ,Create a sampling system that uses SMS to create edits and trigger samples using hidden keywords and anagrams.
+Phone call controller,"Use a rotary phone to trigger another rotary phone in another room. When a user picks up the phone, it speaks a number. Dial the number and a phone in another room ring."
+N4M to M4L workflow,Create a N4M and M4L workflow.
+Enviromental M4L control,Create M4L plugins controlled by environmental factors.
+CD motor paint spinner,Create a spin-art hardware piece controlled by an environmental API. Control the spin and distribution of paint via a hardware interface.
+Dunk Tank,Connect N4M to a dunk tank.
+nerf guns,"Get a camera dolly and add a NERF gun that is triggered using a rubber band and a servo motor. Use an ultrasonic system to move towards a target and take a photo. Send the photo to an API for verification, determine if the target is friendly."
+N4M speak & spell controller,"Circuit bend a Speak & Speak and connect bend points to an Arduino. Using PWM out, control bend points by sending data to the Arduino from Max using the up/down votes on Reddit."
+Web LFO machine to hardware,Create a web-based LFO generator that sends data to Max and to an analog synthesizer using Expert Sleeper modules.
+Fractal manager,
+Data modeling,Create examples of using data to model sonic experiences.
+MIDI barcode scores,"Using a barcode scanner, collect data from clothing within Walmart and send the data to a cloud database in real time. Periodically fetch from the database and create MIDI scores based on the barcodes."
+retail to image sonify,Take an image of retail tag and sonify the price.
+Ouija board,Add magnetics to a ouija board and magnetically attract the main piece to speak to humans from the other side.
+Dice roll cam,Create a top-down dice camera that can identify numbers using OCR and notify D&D users.
+Collective glitch,"Encourage users to mail personal letters to a central address. Collect the letters, take a photo, use OCR to get the information in the letters. Use NLP to determine word counts and phrases, use the data to collectively glitch historic works of art."
+NBA MIDI List compiler,Compile a list of MIDI based on box-scores from NBA games.
+SMS to TTS,Send SMS to a server and create TTS passages.
+SMS to TTS + Processing,Send SMS to a server and create TTS passages that can be used to controll Processing.
+MQTT N4M,Create MQTT examples
+CoAP N4M,Create CoAP examples
+N4M Robotic arm,Control a robotic arm using N4M using a web browser.
+Film director visualizer,Scrape the web for film directors and create an interactive sound collage based on their interconnected actors and actresses.
+Film poster remixer,Scrape the web for film posters and develop a collage by layering multiple posters.
+Slack chat word functions,"Within Slack, specific words trigger functions sound effects in Max."
+Slack Siren,"When a user mentions a certain word or uses a specific emoji, it will trigger a siren and a police light will spin."
+Conversation visualizer,Scrape forum conversations from a website and visualize the conversation.
+Data particle generator,Use the CERN API to developer Jitter particle pieces.
+NLP new paragraph generator,Extract sample paragraphs from important works of literature and develop new paragraphs using NLP. Sonify the new and old paragraphs as dual-headed synthesizers.
+Algorithmic quote mashup,Scrape famous quotes and develop new quote mashups. Use the new quotes to process TTS vocalizations.
+meme generator,Create a meme generator.
+Nightlight designer,"Using a microcontroller and IoT environmental sensors, generate soothing nightlight-style visuals using Jitter."
+Server-side rendering,Create examples of server-side rendering with Max.
+N4M prepared piano,Connect solenoids to a grand piano and use Max to create algorithmic prepared piano pieces. Use various APIs to create solenoid sequences.
+Micro. record data packet,Create an API that sources data from custom sensors in a space. Use the data to generate DMX light sequences based on human interaction.
+Discord web image creator,"Using Discord conversations, create a new image and upload it back to discord. Use Jitter for image creation."
+science apis,Create examples of various science APIs.
+wind to sound gen,Use wind APIs to synthesize wind sounds.
+n4m dmx blackbox,Create a series of DMX workflows.
+light automation,Develop automation workflows for DMX lights.
+camera automation,Develop automation workflows for webcams.
+drapery automation,Create an interactive piece that creates a drapery motion using a series of stepper motors based on winds from Everest.
+Designer shoes,Generate new shoe designs with Jitter.
+projection games,Develop a series of interactive projection games that create new games algorithmically based on user input and webcam observation.
+top projection city chess,"Create a global chess game between 2 cities. To move a piece, a user needs to find a hidden QR code that will open a web page and allow you to move a piece. The idea is like Willy Wonka’s golden ticket meets geocaching."
+Sculpting with Water Fountains,Sculpt 3D shapes into new abstract designs up interactive experiences using museum water foundations.
+XR,Create a series of examples integrating APIs and IoT sensors with XR devices.
+image for a day more tomorrow,Create a collage image every day for a year based on free webcam feed stills from around the world. Extract by scraping the web and use Jitter to create the image.
+N4M framework examples,Create web framework examples for N4M.
+N4M css examples,Create css framework examples for N4M.
+Plantary models for grav,Extract planetary models from a space API and create an interactive AV experience using gravitational models.
+serial cam control,Create examples of Serial camera controls.
+email data structures,Create workflows for using email as a device for compiling and rearranging data structures. The new structures are used to develop new audio pieces or visual experiences.
+voice painter,Use your voice to paint an image using WebGL.
+Minority Report interface,"Using 4 leap motions, a webcam and a pico projector, use hand gestures to move images and interact with video content."
+collective oynx performance,"Using the Orion Onyx smart walkie talkie, create an algorithm for capturing audio in a variety of locations and re-sampling the content within Max. Servos connected via WiFi toggle the recording interface of the Onyx."
+magnet control,Create a series of magnets using magnetic data captured in an environment.
+fuxxy usb interface,Create an example of developing a fuzzy usb interface that interacts with Node.js.
+IR sensor,Create examples for IR sensors.
+tilter sensor,Create examples using tilt sensors.
+temp,Create examples using temp sensors.
+time of flight,Create examples using “time of flight” hardware sensing.
+standalone looper with node updates,Create a standalone piece that updates a GUI using serverless push notifications.
+singage,Create workflows for digital signage.
+interactive signare,Create workflows using environmental sensors to create interactive signage.
+Unity web,Create workflows for connecting Unity web examples to Node and Max.
+museum tours with push notifications,Create a standalone device that can receive push notifications to update attendees with information about pieces in a museum.
+PIR,Create examples for PIR sensors.
+MIDI controller Database ,Develop an MIDI controller database for sharing configurations of various MIDI controllers.
+Event MIDI sharing,Get carbon data from rainforests around the world and use serverless functions to send MIDI data to newsletter subscribers.
+Remote hand pressure glove,Develop a glove that can sense hand pressure and sends it to a cloud database for viewing in Max.
+Manufacture buffers (sounds from machines),Create audio buffers based on mechanical data from industrial APIs.
+Dog feeder with sounds of owner,Develop a standalone hardware unit that tracks a pet’s feeding cycle and plays the audio of the owner talking to decrease loneliness.
+Remote locks,Develop examples for controlling IoT locks.
+Web line drawing (panning),Create a web page for controlling audio panning of a composition.
+N4M Twitch,Create a series of examples for Twitch.
+VVVV examples,Create examples for VVVV
+p5js ,Create examples of integrating p5js with Max.
+N4M Web Audio broadcast,Create a workflow for broadcasting audio to the browser via Web Audio buffers.
+n4m web audio control,Create a WebSocket workflow for controlling the Web Audio API from Max.
+pdf to email,Receive a PDF via email and create a collage using Jitter.
+pdf to fx,Use a PDF to determine audio processing parameters using OCR. Visual processing designs also apply.
+web drawing tools,Use a Leap Motion to draw in the browser.
+Web Expert Sleepers,Create workflows for using a browser to control Expert Sleeper eurorack modules.
+basic audio chunking,Create examples of audio chunking going from Max to Node and Node to Max.
+Vocal processing states,Use state (i.e. New York or Montana) data to determine vocal presets.
+Gyro music,Develop examples for using a gyro from a phone or chip to control 3D objects in the browser.
+Sound design theater,Develop workflows for triggering audio and visual events for theater production.
+DMX Examples,Create DMX examples
+Haunted house,Design an interactive haunted house.
+API to gen~workflow,Create workflows for going from an API to gen~.
+Vending Machine composer,"Get a vending machine, add conductive material to each item in each row. When a product drops, it creates an audio experience."
+Sat data from space for quad panning manipulation,Use satellite data to control a quadraphonic composition.
+Node VPN,Create VPN examples.
+Node Ngrok,Create ngrok examples.
+Jitter Worldwide ,Get web feeds from around the world using various APIs and compile the content into a single feed using Jitter. Broadcast the feed.
+Party synth,Get web feeds from around the world using various APIs and compile the content into a single feed using Jitter. Broadcast the feed.
+Reddit TTS in Max,"Create a program that gets Reddit headlines and sends TTS passages to Max. The audio content is pitch-shifted, and visualize the text in Jitter."
+Process News headlines,Use news headlines from around the world to synthesize and process audio.
+OCR,Create examples of integrating OCR into Max.
+Google earth coords chords,Use Google Earth coordinates to create MIDI chords.
+Geocaching,"Create examples for geocaching experiments. When a user interacts with an artifact in the field, it sends data back to Max and emails the user a new composition."
+sonify satellite patterns,Sonify and visualize satellite patterns.
+JSON compiler from dict,Create JSON and dict examples.
+Max on the cloud (Azure),Create a single page Max app in the cloud with Azure or AWS.
+RC car control,Control an RC car over the internet.
+Garbage sounds,"Layer the inside of a garbage barrel and trash bag with piezos. When a racoon tries to tip the barrel, Emperor plays from hidden rock speakers."
+Growing mushroom synth,"Add temp, humidity and moisture sensors to soil. Add mushroom spores. Record daily data and push to a cloud database. Create daily AV experiences rendered in Max/Jitter and upload to YouTube or Vimeo."
+Mushroom forager hand scan synth,"Using a microcontroller and a webcam, record a video that is 3-5 seconds in duration and use frame extraction to create parameters for a scanned synthesis synthesizer."
+Solenoid player,Develop workflows for modular solenoids that can be triggered over the internet.
+velostat pillow trigger,Layer a pillow with velostat and record your head movements while you sleep. Generate ambient music based on your sleeping patterns.
+# pad for Opening a door & play sample,Layer a pillow with velostat and record your head movements while you sleep. Generate ambient music based on your sleeping patterns.
+Alexa,Create examples for Alexa.
+Google home,Create examples for Google Home.
+max controlling netflix,Design a program for interfacing with the Netflix API.
+interface with spotify,Design a program for interfacing with the Spotify API.
+IoT hubs,Create workflows for various IoT Hub designs.
+IR remotes,Create examples of IR remotes.
+Acoustic couplers,Create an example of sending information from an acoustic coupler to Max over Serial and use the data to create AV experiences.
+web midi keyboard to max,Create a web page with a keyboard that sends MIDI notes to Max.
+garden visualizer,Add a variety of sensors to your garden and visualize the data.
+Street Fighter V joystick sonification,"Create a workflow for sonifying and recording arcade stick data, restream on Twitch."
+World Cup Composer,Create 2-instrument compositions based on World Cup soccer matchups and use country data to design audio envelopes.
+Stochastic Snow,Place weatherproof sensors into snow mounds in a field and connect to a microcontroller. Put the unit in a weatherproof container and send the data to a central location for analysis & processing.
+Top-10 yearly mashup,"Get lists of Top-10 songs from every year in a decade, use yt-dl to get the audio tracks, and create yearly mashups by vertically stacking the audio files."
+Baseball sunsets,Use OpenCV to observe baseball pitches and use the data to manipulate sunset images from around the world.
+Klingon Translator,Create a TTS program that can translate phrases into Klingon.
+AV Philosophies,Get philosophical theories from an API and use them to synthesize AV experiences.
+Skynet,Design an IoT Hub that controls robotic arms and eyes.

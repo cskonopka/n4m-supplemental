@@ -15,3 +15,4 @@ ejs
 - Click "script start" to start the server.
 - Open a web browser and go to *http://localhost:3000*.
 - Each of the <input> examples sends data to Max as a dictionary.
+- The data sent from the browser is used to control various parameters of a synthesizer.

@@ -1,0 +1,11 @@
+https://github.com/maxogden/art-of-node
+https://www.programmableweb.com/
+https://github.com/public-apis/public-apis
+https://apilist.fun/
+https://public-apis.xyz/
+https://any-api.com/
+https://www.diycode.cc/projects/toddmotto/public-apis
+https://api.nasa.gov/
+https://www.computersciencezone.org/50-most-useful-apis-for-developers/
+https://apis.guru/browse-apis/
+https://rapidapi.com/collection/list-of-free-apis

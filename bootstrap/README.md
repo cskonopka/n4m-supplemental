@@ -14,3 +14,4 @@ A static webpage of bootstrap components served by Express.
 - Click "npm i" to install the required libraries
 - Click "script start" to start the server.
 - Open a web browser and go to *http://localhost:3000*.
+- The webpage is an example of how to add Bootstrap elements to a web page.
