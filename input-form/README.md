@@ -5,9 +5,13 @@
 # input-form
 A static webpage of <input> tag examples hosted with Express.
 
+<p align="center">
+  <img width="74%" height="74%" src="https://i.ibb.co/QcnY1Gd/n4m-inputform.png"/>  
+</p>
+
 ## Requirements
-express
-ejs
+- express
+- ejs
 
 ## How to use
 - Open the patch named "input-form.maxpatch".
