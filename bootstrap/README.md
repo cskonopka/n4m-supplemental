@@ -15,3 +15,14 @@ A static webpage of bootstrap components served by Express.
 - Click "script start" to start the server.
 - Open a web browser and go to *http://localhost:3000*.
 - The webpage is an example of how to add Bootstrap elements to a web page.
+
+## Examples
+
+### Desktop browser
+<img width="47%" height="47%" src="https://i.ibb.co/KWv5JMF/n4m-bootstrap-webpage.png"/>  
+
+### Mobile (vertical)
+<img width="47%" height="47%" src="https://i.ibb.co/4f5tMM5/n4m-bootstrap-mobile-vertical.png"/>  
+
+### Mobile (horizontal)
+<img width="47%" height="47%" src="https://i.ibb.co/Yk3hQfg/n4m-bootstrap-mobile-horizontal.png"/>  
