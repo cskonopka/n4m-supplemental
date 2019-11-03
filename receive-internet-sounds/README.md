@@ -41,4 +41,8 @@ The *receive-internet-sounds* project leverages the *file-upload* examples from 
  - Open a web browser and go to the *http* url.
  - Find and upload a *.wav* file using the prompt on the web page.
  - Wait a few moments.
- - Magic! Max can now play audio from around the globe. 
+ - Magic! Max can now play receive audio from around the world.
+
+## Demo
+
+[YouTube](https://youtu.be/BLFCsmWai-E)
