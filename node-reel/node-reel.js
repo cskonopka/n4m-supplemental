@@ -11,6 +11,7 @@ function anypost(str) {
 
 anypost("START!!!!!!!");
 
+// Post a message every minute
 reel().call(() => {
     // say hello on mondays
     anypost("HOWDY!!!!!!!");
