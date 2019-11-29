@@ -21,7 +21,7 @@ Max.addHandler("usgs", (...string) => {
     let url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + start + "&endtime=" + end;
 
     https.get(url, res => {
-        res.setEncoding("utf8");
+        // res.setEncoding("utf8");
         let body = "";
         // receive data body
         res.on("data", data => {

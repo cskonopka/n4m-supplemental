@@ -1,5 +1,5 @@
 // Require the max-api module to connect to Max via node.script
-const Max = require("max-api");
+const maxAPI = require("max-api");
 
 // Require the module in your project
 const IFTTT = require('ifttt-webhooks-channel')
@@ -20,18 +20,18 @@ if (!process.env.GSHEETS_KEY) {
 }
 
 // Create a new IFTTT instance
-const ifttt = new IFTTT(process.env.GSHEETS_KEY) // key is where your webhooks channel key goes
+const ifttt = new IFTTT("bfVDTLY4VD1Fmfv_eeCKcw") // key is where your webhooks channel key goes
 
 function anypost(str) {
     if (Max) {
-        Max.post(str);
+        maxAPI.post(str);
     } else {
         console.log(str);
     }
 }
 
 // Receive elements from Max
-Max.addHandler("send2sheets", (...elements) => {
+maxAPI.addHandler("send2sheets", (...elements) => {
     anypost(elements);
 
     // POST elements to Google sheet named "n4m-to-sheets"

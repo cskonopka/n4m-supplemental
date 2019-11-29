@@ -1,10 +1,10 @@
 const Max = require("max-api");
-var express = require('express');
+const express = require('express');
 const path = require('path');
 var things = require('./router.js');
 var app = express();
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false }));
+
 function anypost(str) {
 	if (Max) {
 		Max.post(str);
@@ -12,6 +12,9 @@ function anypost(str) {
 		console.log(str);
 	}
 }
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.set('views', path.join(__dirname, 'html'));
 
 // Set the folder for css & java scripts

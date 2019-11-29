@@ -1,13 +1,12 @@
-// var exampleSocket = new WebSocket("ws://192.168.1.51:7474");
-var exampleSocket = new WebSocket("ws://104.216.216.194:7474"); 
-
-function send2Max(inputval){
-    console.log(inputval);
-    exampleSocket.send(inputval);
-  }
+// Connect websocket from browser to backend
+var exampleSocket = new WebSocket("ws://localhost:7474");
 
 // Managing the interaction
+function send2Max(inputval) {
+  exampleSocket.send(inputval);
+}
+
 
 $(window).on("beforeunload", function () {
-	exampleSocket.close();
+  exampleSocket.close();
 });

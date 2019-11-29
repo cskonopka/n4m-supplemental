@@ -1,0 +1,37 @@
+npm WARN enoent ENOENT: no such file or directory, open '/Users/csk/package.json'
+npm WARN react-router@1.0.3 requires a peer of history@^1.17.0 but none is installed. You must install peer dependencies yourself.
+npm WARN csk No description
+npm WARN csk No repository field.
+npm WARN csk No README data
+npm WARN csk No license field.
+
+npm ERR! path ../mssql/bin/mssql
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall symlink
+npm ERR! Error: EACCES: permission denied, symlink '../mssql/bin/mssql' -> '/Users/csk/node_modules/.bin/mssql'
+npm ERR!  { [Error: EACCES: permission denied, symlink '../mssql/bin/mssql' -> '/Users/csk/node_modules/.bin/mssql']
+npm ERR!   cause:
+npm ERR!    { Error: EACCES: permission denied, symlink '../mssql/bin/mssql' -> '/Users/csk/node_modules/.bin/mssql'
+npm ERR!      errno: -13,
+npm ERR!      code: 'EACCES',
+npm ERR!      syscall: 'symlink',
+npm ERR!      path: '../mssql/bin/mssql',
+npm ERR!      dest: '/Users/csk/node_modules/.bin/mssql' },
+npm ERR!   stack:
+npm ERR!    'Error: EACCES: permission denied, symlink \'../mssql/bin/mssql\' -> \'/Users/csk/node_modules/.bin/mssql\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'symlink',
+npm ERR!   path: '../mssql/bin/mssql',
+npm ERR!   dest: '/Users/csk/node_modules/.bin/mssql' }
+npm ERR! 
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR! 
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator (though this is not recommended).
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/csk/.npm/_logs/2019-11-24T03_21_47_956Z-debug.log
