@@ -3,16 +3,23 @@
 </p>
 
 # xeno-canto
-Create a pool of bird sounds using the xeno-canto API.
+Create a bird sound sample with birds from around the globe using Node-for-Max.
 
 <p align="center">
   <img width="47%" height="47%" src="https://i.ibb.co/2Y03GjV/xenocanto-01.png"/>  
 </p>
 
-## Requirements
+# Requirements
 [shelljs](https://www.npmjs.com/package/shelljs)
 
-# How did I create this ?
+# Why?
+I wanted to create a sample pool of bird sounds from around the world using Node.js and the xeno-canto API. I enjoy listening to birds in the wild and now I can process bird sounds from around the world!
+
+<p align="center">
+  <img width="47%" height="47%" src="https://i.ibb.co/4fVj2Sd/xenocanto-01.gif"/>  
+</p>
+
+# How?
 I started by searching for “free bird sound apis” using Google and found [xeno-canto](https://www.xeno-canto.org/), a website for “sharing bird sounds from around the world”.
 
 <p align="center">
@@ -135,7 +142,7 @@ Max.outlet(encodedURL);
 When the GET request is complete, it sends the encoded URLs to Max and added to a jit.cellblock using the counter and pak objects. 
 
 <p align="center">
-  <img width="47%" height="47%" src="https://i.ibb.co/f83JS37/xenocanto-07.png"/>  
+  <img width="74%" height="74%" src="https://i.ibb.co/f83JS37/xenocanto-07.png"/>  
 </p>
 
 Underneath the jit.cellblock object is an unpack with a “download” message. When I click a URL I want to download the URL using FFmpeg. Before the fun begins, I need to create a new handler that listens to the “download” event message that ingests the URL.
