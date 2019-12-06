@@ -1,6 +1,6 @@
 const Max = require("max-api");
 const https = require('https');
-const shell = require('shelljs');
+const shell = require('shelljs'); // unix shell commands
 
 function anypost(str) {
     if (Max) {
@@ -10,71 +10,100 @@ function anypost(str) {
     }
 }
 
-Max.addHandler("download", (string) => {
-    var fulllink = "https://" + string;
-    var seperator = ".MP3";
-    var thinlink = fulllink.split(seperator);
-    var completeWAV = thinlink[0] + ".wav";
-    var seperator2 = "uploaded/";
-    var thinWav = completeWAV.split(seperator2);
-    var separator3 = "/";
-    var lastsplit = thinWav[1].split(separator3);
+// Download bird calls from Max
+Max.addHandler("download", (urlFromMax) => {
+    // Example comments based on the "Recording Object" from the API page of xeno-canto
+    // https://www.xeno-canto.org/explore/api
 
+    // Receive url from Max via "urlFromMax"
+    // "https://www.xeno-canto.org/sounds/uploaded/ZWAQHOJFLZ/XC477551-190503-Troglodyte%20mignon@Sacharewo.mp3"
+
+    // Remove ".mp3" extension and add ".wav"
+    // Create a new separator
+    var seperator = ".MP3" && ".mp3";
+    // Split filename at .mp3
+    var splitAudioLink = urlFromMax.split(seperator);
+    // Add .wav to filename
+    var createWavFile = splitAudioLink[0] + ".wav";
+
+    // Split the new .wav file using a new separator
+    // Create a new separator
+    var seperator2 = "uploaded/";
+    // "https://www.xeno-canto.org/sounds/uploaded/" "ZWAQHOJFLZ/XC477551-190503-Troglodyte%20mignon@Sacharewo.mp3"
+    var splitURL = createWavFile.split(seperator2);
+
+    // Remove the last tag next to the backslash
+    var separator3 = "/";
+    // "ZWAQHOJFLZ/" "XC477551-190503-Troglodyte%20mignon@Sacharewo.wav"
+    // Create the final filename for FFmpeg.
+    var outputFilename = splitURL[1].split(separator3);
+
+    // Pause and then use shelljs to run a FFmpeg script
     setTimeout(function () {
-        var ripHaze = '/usr/local/bin/ffmpeg -i "' + fulllink + '" ' + lastsplit[1];
-        anypost(ripHaze);
-        if (shell.exec(ripHaze).code !== 0) {
+        // Create FFmpeg script
+        var ffmpegScript = '/usr/local/bin/ffmpeg -i "' + urlFromMax + '" ' + outputFilename[1];
+        if (shell.exec(ffmpegScript).code !== 0) {
             shell.echo('failed');
-            // shell.exit(1);
-            if (Max) Max.outlet("complete1");
         }
         Max.outlet("fin");
     }, 2000);
-    Max.post("complete3");
+    Max.post("ready");
 });
 
-let str = "";
-
+// Send a GET Request to xeno-canto API
 Max.addHandler("xc", (...string) => {
+    /* 
+        xeno-canto GET Request
+        https://www.xeno-canto.org/api/2/recordings?query=
+
+        country (cnt): country to be searched
+        pagenum (page): page number of the request
+    */
+    // incoming arguments from Max
     let country = string[0];
     let pagenum = string[1];
 
-    // USGS GET Request
+    // xeno-canto api
     let url = "https://www.xeno-canto.org/api/2/recordings?query=cnt:" + country + "&page=" + pagenum;
 
+    // GET request
     https.get(url, res => {
-        // res.setEncoding("utf8");
         let body = "";
-        // receive data body
+        // receive data body 
         res.on("data", data => {
+            // add to the body variable
             body += data;
         });
         res.on("end", () => {
             // parse the JSON
             body = JSON.parse(body);
-            var fruits = new Array;
-            // access the "features" part of the JSON body
+            // access the "Recordings" part of the JSON body
+            // Create a loop based on the # of recordings on the page
             for (i = 0; i < body.recordings.length; i++) {
+                // "file-name" key 
                 var filename = body.recordings[i]["file-name"];
 
-                var str = body.recordings[i].sono["med"];
+                // "sono" object, "med" key url
+                // "www.xeno-canto.org/sounds/uploaded/ZWAQHOJFLZ/ffts/XC477551-med.png"
+                var sonogram = body.recordings[i].sono["med"];
+
+                // "sono" object, "med" key" url at "ffts/"
+                // "//www.xeno-canto.org/sounds/uploaded/ZWAQHOJFLZ/" "ffts/XC477551-med.png"
                 var seperator = "ffts/";
-                var string = str.split(seperator);
-                var str2 = string[0] + filename;
+                var sonomed = sonogram.split(seperator);
 
-                var seperator2 = "//";
-                var string2 = str2.split(seperator2);
+                // Concat "sono" object, "med" key + "file-name" key
+                // "//www.xeno-canto.org/sounds/uploaded/ZWAQHOJFLZ/" + "XC477551-190503-Troglodyte mignon@Sacharewo.mp3"
+                // "//www.xeno-canto.org/sounds/uploaded/ZWAQHOJFLZ/XC477551-190503-Troglodyte mignon@Sacharewo.mp3"
+                var combinePieces = sonomed[0] + filename;
 
-                if (string2[1].includes('.mp3') == false) {
-                    fruits.push(string2[1]);
-                    var firsthalf = string2[1].replace(/\s+/g, '%20');
-                    anypost(firsthalf);
-                    Max.outlet(firsthalf);
-                };
+                // encode spaces from " " to %20 
+                // "https://www.xeno-canto.org/sounds/uploaded/ZWAQHOJFLZ/XC477551-190503-Troglodyte%20mignon@Sacharewo.mp3"
+                var encodedURL = "https:" + combinePieces.replace(/\s+/g, '%20');
+                // anypost(encodedURL);
+                Max.outlet(encodedURL);
             }
-            // output the magnitudes to Max;
-            anypost(fruits.length);
-            fruits = "";
         });
     });
 });
+
