@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 577.0, 306.0, 50.0, 22.0 ]
+					"patching_rect" : [ 208.999987244606018, 334.666662633419037, 50.0, 22.0 ]
 				}
 
 			}
@@ -541,7 +541,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1795.0, 300.0, 105.0, 22.0 ],
-					"text" : " 2 0.078311"
+					"text" : "2 0.078311"
 				}
 
 			}
@@ -898,7 +898,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.0, 834.0, 59.0, 23.0 ],
+					"patching_rect" : [ 1034.0, 788.199999094009399, 59.0, 23.0 ],
 					"text" : "params"
 				}
 
@@ -1411,7 +1411,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 425.0, 274.0, 85.0, 22.0 ],
+					"patching_rect" : [ 66.050005376338959, 302.0, 85.0, 22.0 ],
 					"text" : "route fin ready"
 				}
 
@@ -1480,7 +1480,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1253.0, 107.0, 73.0, 23.0 ],
+					"patching_rect" : [ 1431.400002658367157, 126.200000286102295, 73.0, 23.0 ],
 					"text" : "selection 2"
 				}
 
@@ -1563,7 +1563,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.800005376338959, 174.000001668930054, 124.0, 40.0 ],
+					"patching_rect" : [ 525.800005376338959, 184.000001668930054, 124.0, 40.0 ],
 					"text" : "xc spain 1",
 					"textjustification" : 1
 				}
@@ -1623,260 +1623,18 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 147.0, 319.666662633419037, 51.0, 22.0 ],
+					"patching_rect" : [ 66.050005376338959, 334.666662633419037, 51.0, 22.0 ],
 					"text" : "s output"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 28.0,
+					"clipheight" : 318.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Ithaginis_cruentus_LambertChina05.1a_CN_21.2_90.9-98_1_S.wav",
-								"filename" : "Ithaginis_cruentus_LambertChina05.1a_CN_21.2_90.9-98_1_S.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.4794921875, 0.220703125 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 1 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 0.105825424194336 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC172550-HainanPartridge21078.mp3.wav",
-								"filename" : "XC172550-HainanPartridge21078.mp3.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.4794921875, 0.220703125 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 0.105825424194336 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC172550-HainanPartridge21078.wav",
-								"filename" : "XC172550-HainanPartridge21078.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC239740-Daurian%20Partridge-Chaka-May-2012.wav",
-								"filename" : "XC239740-Daurian%20Partridge-Chaka-May-2012.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC254660-Hainan%20Partridge_Jianfengling2.mp3.wav",
-								"filename" : "XC254660-Hainan%20Partridge_Jianfengling2.mp3.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC294654-070115_Africanfisheagle_DebreZeit_1455u_GOKeijl.wav",
-								"filename" : "XC294654-070115_Africanfisheagle_DebreZeit_1455u_GOKeijl.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC294774-160115_emeraldspottedwooddove_Genale_1623u_GOKeijl.wav",
-								"filename" : "XC294774-160115_emeraldspottedwooddove_Genale_1623u_GOKeijl.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC330722-Cyanistes%20caeruleus%20160710_001,B.wav",
-								"filename" : "XC330722-Cyanistes%20caeruleus%20160710_001,B.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC330740-Oriolus%20160714_004,AB.wav",
-								"filename" : "XC330740-Oriolus%20160714_004,AB.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC397484-713_0564.wav",
-								"filename" : "XC397484-713_0564.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC465162-2018.07.22_13.08_01.wav",
-								"filename" : "XC465162-2018.07.22_13.08_01.wav",
+								"absolutepath" : "XC299937-LS_50800%20Egyptian%20Goose%20call%20A.wav",
+								"filename" : "XC299937-LS_50800%20Egyptian%20Goose%20call%20A.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
@@ -1972,7 +1730,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 278.300005376338959, 254.400000929832458, 55.0, 27.0 ],
+					"patching_rect" : [ 278.300005376338959, 264.400000929832458, 55.0, 27.0 ],
 					"text" : "s clear"
 				}
 
@@ -1984,7 +1742,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.800005376338959, 319.666662633419037, 50.0, 22.0 ],
+					"patching_rect" : [ 153.800005376338959, 334.666662633419037, 50.0, 22.0 ],
 					"text" : "r clear"
 				}
 
@@ -1998,7 +1756,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 363.800005376338959, 174.000001668930054, 160.0, 40.0 ],
+					"patching_rect" : [ 363.800005376338959, 184.000001668930054, 160.0, 40.0 ],
 					"text" : "xc bulgaria 1",
 					"textjustification" : 1
 				}
@@ -2013,7 +1771,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.800005376338959, 174.000001668930054, 123.0, 40.0 ],
+					"patching_rect" : [ 238.800005376338959, 184.000001668930054, 123.0, 40.0 ],
 					"text" : "xc china 1",
 					"textjustification" : 1
 				}
@@ -2028,7 +1786,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.63333848118782, 753.0, 158.0, 40.0 ],
+					"patching_rect" : [ 119.63333848118782, 768.0, 158.0, 40.0 ],
 					"text" : "download $1",
 					"textjustification" : 1
 				}
@@ -2043,7 +1801,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.800005376338959, 121.228913192092932, 304.0, 40.0 ],
+					"patching_rect" : [ 89.800005376338959, 131.228913192092932, 304.0, 40.0 ],
 					"text" : "script npm install shelljs",
 					"textjustification" : 1
 				}
@@ -2056,7 +1814,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "" ],
-					"patching_rect" : [ 35.63333848118782, 729.0, 73.0, 22.0 ],
+					"patching_rect" : [ 65.63333848118782, 744.0, 73.0, 22.0 ],
 					"text" : "unpack 0 0 l"
 				}
 
@@ -2068,7 +1826,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.800005376338959, 343.666662633419037, 50.0, 22.0 ],
+					"patching_rect" : [ 153.800005376338959, 358.666662633419037, 50.0, 22.0 ],
 					"text" : "clear all"
 				}
 
@@ -2080,7 +1838,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.800005376338959, 373.166666686534882, 29.5, 22.0 ],
+					"patching_rect" : [ 153.800005376338959, 388.166666686534882, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -2092,7 +1850,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.63333848118782, 466.0, 72.0, 22.0 ],
+					"patching_rect" : [ 65.63333848118782, 481.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -2109,7 +1867,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "", "", "" ],
-					"patching_rect" : [ 35.63333848118782, 498.333333432674408, 762.0, 228.666666567325592 ],
+					"patching_rect" : [ 65.63333848118782, 513.333333432674408, 762.0, 228.666666567325592 ],
 					"rowheight" : 30,
 					"rows" : 500
 				}
@@ -2122,7 +1880,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.63333848118782, 442.0, 72.333333790302277, 22.0 ],
+					"patching_rect" : [ 65.63333848118782, 457.0, 85.000000834465027, 22.0 ],
 					"text" : "pak 0 0 s"
 				}
 
@@ -2135,7 +1893,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 109.850001305341721, 442.0, 50.0, 22.0 ]
+					"patching_rect" : [ 153.800005376338959, 457.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -2147,7 +1905,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 62.300005376338959, 373.166666686534882, 24.0, 24.0 ]
+					"patching_rect" : [ 92.300005376338959, 388.166666686534882, 24.0, 24.0 ]
 				}
 
 			}
@@ -2158,7 +1916,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 62.300005376338959, 401.666668057441711, 61.0, 22.0 ],
+					"patching_rect" : [ 92.300005376338959, 416.666668057441711, 101.000001192092896, 22.0 ],
 					"text" : "counter"
 				}
 
@@ -2178,7 +1936,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 257.300005376338959, 343.666662633419037, 400.0, 220.0 ],
+					"patching_rect" : [ 437.0, 334.666662633419037, 333.0, 157.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2192,7 +1950,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 79.800005376338959, 174.000001668930054, 157.0, 40.0 ],
+					"patching_rect" : [ 79.800005376338959, 184.000001668930054, 157.0, 40.0 ],
 					"text" : "xc ethiopia 1",
 					"textjustification" : 1
 				}
@@ -2207,7 +1965,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.450009286403656, 79.228913192092932, 149.0, 40.0 ],
+					"patching_rect" : [ 75.450009286403656, 89.228913192092932, 149.0, 40.0 ],
 					"text" : "script stop",
 					"textjustification" : 1
 				}
@@ -2222,7 +1980,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 62.300005376338959, 36.0, 155.0, 40.0 ],
+					"patching_rect" : [ 62.300005376338959, 46.0, 155.0, 40.0 ],
 					"text" : "script start",
 					"textjustification" : 1
 				}
@@ -2237,12 +1995,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 62.300005376338959, 254.400000929832458, 200.0, 27.0 ],
+					"patching_rect" : [ 62.300005376338959, 264.400000929832458, 200.0, 27.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -2266,7 +2022,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 99.300005376338959, 167.66666454076767, 71.800005376338959, 167.66666454076767 ],
+					"midpoints" : [ 99.300005376338959, 177.66666454076767, 71.800005376338959, 177.66666454076767 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -2323,7 +2079,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 99.13333848118782, 771.666666865348816, 804.40001380443573, 771.666666865348816, 804.40001380443573, 249.0, 71.800005376338959, 249.0 ],
+					"midpoints" : [ 129.13333848118782, 814.066667497158051, 834.000014245510101, 814.066667497158051, 834.000014245510101, 249.0, 71.800005376338959, 249.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -2627,6 +2383,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-135", 1 ],
+					"midpoints" : [ 108.550005376338959, 330.499998182058334, 249.499987244606018, 330.499998182058334 ],
 					"source" : [ "obj-15", 1 ]
 				}
 
@@ -2634,7 +2391,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 434.5, 285.033331781625748, 156.5, 285.033331781625748 ],
+					"midpoints" : [ 75.550005376338959, 325.033332973718643, 75.550005376338959, 325.033332973718643 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -2893,7 +2650,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 84.950009286403656, 168.999998092651367, 71.800005376338959, 168.999998092651367 ],
+					"midpoints" : [ 84.950009286403656, 178.999998092651367, 71.800005376338959, 178.999998092651367 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -3440,7 +3197,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
-					"midpoints" : [ 103.300005376338959, 370.000000476837158, 166.000004291534424, 370.000000476837158, 166.000004291534424, 492.333333075046539, 45.13333848118782, 492.333333075046539 ],
+					"midpoints" : [ 163.300005376338959, 385.000000476837158, 196.000004291534424, 385.000000476837158, 196.000004291534424, 507.333333075046539, 75.13333848118782, 507.333333075046539 ],
 					"order" : 1,
 					"source" : [ "obj-88", 0 ]
 				}
@@ -3608,77 +3365,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Ithaginis_cruentus_LambertChina05.1a_CN_21.2_90.9-98_1_S.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC172550-HainanPartridge21078.mp3.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC172550-HainanPartridge21078.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC239740-Daurian%20Partridge-Chaka-May-2012.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC254660-Hainan%20Partridge_Jianfengling2.mp3.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC294654-070115_Africanfisheagle_DebreZeit_1455u_GOKeijl.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC294774-160115_emeraldspottedwooddove_Genale_1623u_GOKeijl.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC330722-Cyanistes%20caeruleus%20160710_001,B.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC330740-Oriolus%20160714_004,AB.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC397484-713_0564.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC465162-2018.07.22_13.08_01.wav",
+				"name" : "XC299937-LS_50800%20Egyptian%20Goose%20call%20A.wav",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
