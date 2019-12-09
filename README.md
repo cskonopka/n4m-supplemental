@@ -29,3 +29,5 @@
 - **receive-internet-sounds** -> Example how upload a file to Max from anywhere around the earth using ngrok tunneling.
 - **usgs** -> Example of getting earthquake data from the USGS and various sonification techniques.
 - **workshop-materials** -> Materials meant for Node-for-Max workshop free-time. [WIP]
+- **ws-fm-synth** -> Example of how to control Max using a browser with WebSockets.js.
+- **xeno-canto** -> Example of how to create a global bird sampler using xeno-canto, FFmpeg, & *[shelljs](https://www.npmjs.com/package/shelljs)*

@@ -16,7 +16,7 @@ Create a bird sound sample with birds from around the globe using Node-for-Max.
 I wanted to create a sample pool of bird sounds from around the world using Node.js and the xeno-canto API. I enjoy listening to birds in the wild and now I can process bird sounds from around the world!
 
 <p align="center">
-  <img width="47%" height="47%" src="https://i.ibb.co/4fVj2Sd/xenocanto-01.gif"/>  
+  <img width="47%" height="47%" src="https://i.ibb.co/ZftXfWf/xenocanto-02.gif"/>  
 </p>
 
 # How?
@@ -186,3 +186,12 @@ When the download finishes, the “fin” message goes to Max and triggers the f
 <p align="center">
   <img width="47%" height="47%" src="https://i.ibb.co/C6hvRbP/xenocanto-08.png"/>  
 </p>
+
+Now you can download birds from around the world and create your own rainforest compositions. 
+
+<p align="center">
+  <img width="47%" height="47%" src="https://i.ibb.co/4fVj2Sd/xenocanto-01.gif"/>  
+</p>
+
+# Video Example
+~intheworks~
