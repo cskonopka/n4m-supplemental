@@ -16,10 +16,6 @@ Create a bird sound sample with birds from around the globe using Node-for-Max.
 # Why?
 I wanted to create a Node-for-Max project focused on extracting audio from the web using an API to create a sampler. And I thought it would be cool to create a global bird composition machine, but before I get to that level, I needed to build the tools first. Plus, bird sounds are fun!
 
-<p align="center">
-  <img width="47%" height="47%" src="https://i.ibb.co/ZftXfWf/xenocanto-02.gif"/>  
-</p>
-
 # Max Patch
 <p align="center">
   <img width="110%" height="110%" src="https://i.ibb.co/RBmm7Tq/xenocanto-09.png"/>  
@@ -241,9 +237,7 @@ Now you can download birds from around the world and create your own rainforest 
 </p>
 
 # Video Walkthrough
-<p align="center">
-  <img width="47%" height="47%" src="https://i.ibb.co/2Y03GjV/xenocanto-01.png"/>  
-</p>
+Click the image below to go to the YouTube example. :)
 
 [![Node-for-Max Supplemental - xeno-canto](https://i.ibb.co/8z7FXkq/Screen-Shot-2019-12-10-at-1-08-12-PM.png)](https://www.youtube.com/watch?v=Ns-oIcAbu-M "Node-for-Max Supplemental - xeno-canto")
 
