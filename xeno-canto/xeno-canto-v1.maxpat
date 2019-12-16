@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1445.0, 1087.0 ],
+		"rect" : [ 34.0, 79.0, 1852.0, 1087.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,99 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 69.300005376338959, 873.393873044790553, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 69.300005376338959, 1004.993872711004542, 150.0, 22.0 ],
+					"text" : "jit.matrix 4 char 1920 1080"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "jit.pwindow",
+					"name" : "u144004624",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 304.100034121169756, 863.193872222246455, 360.688118166741788, 211.61225555550709 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 69.300005376338959, 949.993872711004542, 32.5, 23.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 69.300005376338959, 921.493872711004542, 90.0, 23.0 ],
+					"text" : "prepend read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 69.300005376338959, 979.993872711004542, 142.0, 23.0 ],
+					"text" : "jit.movie @adapt 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 69.300005376338959, 897.393873044790553, 198.0, 22.0 ],
+					"text" : "https://i.ibb.co/JzRSHkx/259400.jpg"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
@@ -240,151 +333,105 @@
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 52.166666666666664,
+					"clipheight" : 78.75,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "XC317885-ScopsVarna.wav",
-								"filename" : "XC317885-ScopsVarna.wav",
+								"absolutepath" : "20110216_AwashNP_CrestedFrancolin..wav",
+								"filename" : "20110216_AwashNP_CrestedFrancolin..wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.1689453125, 0.98828125 ],
+								"selection" : [ 0.7138671875, 0.4140625 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"play" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formantcorrection" : [ 0 ]
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 1 ],
+									"pitchshift" : [ 0.062563896179199 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "XC330731-Larus%20michahellis%20michahellis%20160710_001,B.MP3.wav",
-								"filename" : "XC330731-Larus%20michahellis%20michahellis%20160710_001,B.MP3.wav",
+								"absolutepath" : "XC254660-Hainan%20Partridge_Jianfengling2..wav",
+								"filename" : "XC254660-Hainan%20Partridge_Jianfengling2..wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.1689453125, 0.98828125 ],
+								"selection" : [ 0.7138671875, 0.4140625 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"play" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
-									"pitchshift" : [ 0.166965484619141 ],
-									"formantcorrection" : [ 0 ]
+									"pitchshift" : [ 0.292325019836426 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "XC367662-Lanius%20nubicus.wav",
-								"filename" : "XC367662-Lanius%20nubicus.wav",
+								"absolutepath" : "XC330739-Oriolus%20160714_004,A1.MP3.wav",
+								"filename" : "XC330739-Oriolus%20160714_004,A1.MP3.wav",
 								"filekind" : "audiofile",
+								"selection" : [ 0.736714975845411, 0.871980676328502 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"play" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
-									"formantcorrection" : [ 0 ]
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "XC402095-RBGO.wav",
-								"filename" : "XC402095-RBGO.wav",
+								"absolutepath" : "XC417663-Oie%20cendree%20cris..wav",
+								"filename" : "XC417663-Oie%20cendree%20cris..wav",
 								"filekind" : "audiofile",
+								"selection" : [ 0.811594202898551, 0.893719806763285 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
-									"play" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formantcorrection" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC448863-%20SHADOW_0655S12.wav",
-								"filename" : "XC448863-%20SHADOW_0655S12.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"pitchcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
 									"play" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
-									"formantcorrection" : [ 0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "XC491563-LS102758%20Verreaux%20Monal%20Partridge%20chorusl%20B.wav",
-								"filename" : "XC491563-LS102758%20Verreaux%20Monal%20Partridge%20chorusl%20B.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
-									"play" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formantcorrection" : [ 0 ]
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ]
 								}
 
 							}
@@ -715,39 +762,10 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
 					"text" : "node.script xeno-canto-v1.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-59",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
-					"patching_rect" : [ 1005.0, 919.0, 72.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"basictuning" : 440,
-						"followglobaltempo" : 0,
-						"formantcorrection" : 0,
-						"loopend" : [ 0.0, "ms" ],
-						"loopstart" : [ 0.0, "ms" ],
-						"mode" : "basic",
-						"originallength" : [ 0.0, "ticks" ],
-						"originaltempo" : 120.0,
-						"phase" : [ 0.0, "ticks" ],
-						"pitchcorrection" : 0,
-						"quality" : "basic",
-						"timestretch" : [ 0 ]
-					}
-,
-					"text" : "mc.groove~"
 				}
 
 			}
@@ -1205,7 +1223,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1766.0, 495.0, 105.0, 22.0 ],
-					"text" : " 1 0.336459"
+					"text" : " 2 0.218733"
 				}
 
 			}
@@ -1293,7 +1311,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1892.5, 554.0, 91.0, 38.0 ],
-					"text" : "pitchshift 0 0.454674"
+					"text" : "pitchshift 1 0.062564"
 				}
 
 			}
@@ -1519,37 +1537,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-119",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 921.0, 1079.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-118",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 937.0, 1160.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-114",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1005.0, 983.199999094009399, 59.0, 23.0 ],
-					"text" : "params"
 				}
 
 			}
@@ -1789,7 +1782,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1448.0, 580.666668057441711, 219.0, 22.0 ],
-					"text" : "selection 1. 0.168945 0.988281"
+					"text" : "selection 0. 0.713867 0.414062"
 				}
 
 			}
@@ -1971,7 +1964,7 @@
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 824.0, 642.0, 358.5, 276.0 ],
+					"patching_rect" : [ 824.0, 642.0, 311.0, 298.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, "ValhallaShimmer.auinfo", ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -2007,7 +2000,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "615.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIwaDklaOAAa...............C..............P..........H..........C..........A.........T..........F.........vA.........f..........I.........fB.........r......RLGZsIGD.HQX0YFdOEQ.GY0PxDROA...7zTVPwTUGkjSSUDUTkjSGMEHvwVcmklaVUlbyk1at0iHwHBHvElbg0VYzUlbvziHv3RNyjSN4jSN4fiHf.WXxEVakQWYxESOhDiHf.WXxEVakQWYxISOh.iKyLiMxXiM1XyMh.BbgIWXsUFckI2L8HBLtPCN0.CLv.SLzHBHvElbg0VYzUlbzziHv3RM1PCLv.CLwHBHvElbg0VYzUlb0ziHvHBHvElbg0VYzUlb1ziHv3RMy.iLvDyLwXiHf.WXxEVakQWYxcSOh.iKw.CLv.CLv.SLh.BbgIWXsUFckIGN8HBLtLCLv.CLv.SLxHBHvElbg0VYzUlb4ziHvHBHvElbg0VYzUlbw.SOh.iHf.WXxEVakQWYxESL8HBLh.RcocUZjQGZ8HhM4PiHfTWZHUVZmgFc8HhL2TiHu3C..fUUtQWZzwVYjA.B.bA.j.PJ.DC.4.fO..E.UAfV.jL.NC.z.Ts.f........HP..........7...................HPJ"
+							"blob" : "626.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIwaDklaOAAa...............C..............P..........H..........C..........A.........T..........F.........vA.........f..........I.........fB.........r......RLGZsIGD.HQX0YFdOEQ.RY0PxDBRA...7zTVPwTUGkjSSUDUTkjSGMEHvwVcmklaVUlbyk1at0iHwHBHvElbg0VYzUlbvziHv3RM1PCLv.CLwHBHvElbg0VYzUlbwziHwHBHvElbg0VYzUlbxziHv3BMxXCNv.CLwLiHf.WXxEVakQWYxMSOh.iK0XCMv.CLvDiHf.WXxEVakQWYxQSOh.iKybSM4jSN4fyMh.BbgIWXsUFckIWM8HBLh.BbgIWXsUFckImM8HBLtTyLvHCLwLSL1HBHvElbg0VYzUlb2ziHv3RLv.CLv.CLvDiHf.WXxEVakQWYxgSOh.iKy.CLv.CLvDiLh.BbgIWXsUFckIWN8HBLh.BbgIWXsUFckIWLvziHvHBHvElbg0VYzUlbwDSOh.iKv.SLwbSL4PiM0LiHfTWZWkFYzgVOhXSNzHBH0kFRkk1YnQWOhHyM0HxK9...XUkazkFcrUFY.f..W..I.jB.w.PN.3C.PAPU.nE.ICfy..M.UKvJ........BD..........O...................BPC"
 						}
 ,
 						"snapshotlist" : 						{
@@ -2031,7 +2024,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "615.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIwaDklaOAAa...............C..............P..........H..........C..........A.........T..........F.........vA.........f..........I.........fB.........r......RLGZsIGD.HQX0YFdOEQ.GY0PxDROA...7zTVPwTUGkjSSUDUTkjSGMEHvwVcmklaVUlbyk1at0iHwHBHvElbg0VYzUlbvziHv3RNyjSN4jSN4fiHf.WXxEVakQWYxESOhDiHf.WXxEVakQWYxISOh.iKyLiMxXiM1XyMh.BbgIWXsUFckI2L8HBLtPCN0.CLv.SLzHBHvElbg0VYzUlbzziHv3RM1PCLv.CLwHBHvElbg0VYzUlb0ziHvHBHvElbg0VYzUlb1ziHv3RMy.iLvDyLwXiHf.WXxEVakQWYxcSOh.iKw.CLv.CLv.SLh.BbgIWXsUFckIGN8HBLtLCLv.CLv.SLxHBHvElbg0VYzUlb4ziHvHBHvElbg0VYzUlbw.SOh.iHf.WXxEVakQWYxESL8HBLh.RcocUZjQGZ8HhM4PiHfTWZHUVZmgFc8HhL2TiHu3C..fUUtQWZzwVYjA.B.bA.j.PJ.DC.4.fO..E.UAfV.jL.NC.z.Ts.f........HP..........7...................HPJ"
+										"blob" : "626.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIwaDklaOAAa...............C..............P..........H..........C..........A.........T..........F.........vA.........f..........I.........fB.........r......RLGZsIGD.HQX0YFdOEQ.RY0PxDBRA...7zTVPwTUGkjSSUDUTkjSGMEHvwVcmklaVUlbyk1at0iHwHBHvElbg0VYzUlbvziHv3RM1PCLv.CLwHBHvElbg0VYzUlbwziHwHBHvElbg0VYzUlbxziHv3BMxXCNv.CLwLiHf.WXxEVakQWYxMSOh.iK0XCMv.CLvDiHf.WXxEVakQWYxQSOh.iKybSM4jSN4fyMh.BbgIWXsUFckIWM8HBLh.BbgIWXsUFckImM8HBLtTyLvHCLwLSL1HBHvElbg0VYzUlb2ziHv3RLv.CLv.CLvDiHf.WXxEVakQWYxgSOh.iKy.CLv.CLvDiLh.BbgIWXsUFckIWN8HBLh.BbgIWXsUFckIWLvziHvHBHvElbg0VYzUlbwDSOh.iKv.SLwbSL4PiM0LiHfTWZWkFYzgVOhXSNzHBH0kFRkk1YnQWOhHyM0HxK9...XUkazkFcrUFY.f..W..I.jB.w.PN.3C.PAPU.nE.ICfy..M.UKvJ........BD..........O...................BPC"
 									}
 ,
 									"fileref" : 									{
@@ -2201,15 +2194,15 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 816.0, 929.666666716337204, 48.0, 136.0 ],
+					"patching_rect" : [ 816.0, 944.666666716337204, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
@@ -2224,7 +2217,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 817.999999940395355, 1077.0, 75.0, 75.0 ]
+					"patching_rect" : [ 817.999999940395355, 1092.0, 75.0, 75.0 ]
 				}
 
 			}
@@ -2240,6 +2233,18 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1189.5, 287.0, 52.0, 22.0 ],
+					"text" : "clear $1"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2252,6 +2257,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
 					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-105", 0 ]
 				}
 
 			}
@@ -2280,6 +2292,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
 					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -2343,13 +2362,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-126", 1 ],
 					"source" : [ "obj-112", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-114", 0 ]
 				}
 
 			}
@@ -2803,15 +2815,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"source" : [ "obj-19", 0 ]
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-119", 0 ],
-					"source" : [ "obj-20", 2 ]
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -2881,6 +2893,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -2922,6 +2941,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-34", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -3151,6 +3191,13 @@
 					"destination" : [ "obj-32", 0 ],
 					"order" : 0,
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
@@ -3610,42 +3657,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "XC317885-ScopsVarna.wav",
+				"name" : "20110216_AwashNP_CrestedFrancolin..wav",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "XC330731-Larus%20michahellis%20michahellis%20160710_001,B.MP3.wav",
+				"name" : "XC254660-Hainan%20Partridge_Jianfengling2..wav",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "XC367662-Lanius%20nubicus.wav",
+				"name" : "XC330739-Oriolus%20160714_004,A1.MP3.wav",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "XC402095-RBGO.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC448863-%20SHADOW_0655S12.wav",
-				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
-				"patcherrelativepath" : ".",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "XC491563-LS102758%20Verreaux%20Monal%20Partridge%20chorusl%20B.wav",
+				"name" : "XC417663-Oie%20cendree%20cris..wav",
 				"bootpath" : "~/Documents/_REPO/n4m-supplemental/xeno-canto",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
@@ -3675,7 +3708,6 @@
 				"name" : "light",
 				"default" : 				{
 					"fontsize" : [ 32.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -3685,7 +3717,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
