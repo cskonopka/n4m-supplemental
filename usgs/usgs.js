@@ -3,14 +3,6 @@
 const Max = require("max-api");
 const https = require('https');
 
-function anypost(str) {
-    if (Max) {
-        Max.post(str);
-    } else {
-        console.log(str);
-    }
-}
-
 let str = "";
 Max.addHandler("usgs", (...string) => {
     // start = starting date range
@@ -33,7 +25,7 @@ Max.addHandler("usgs", (...string) => {
             // access the "features" part of the JSON body
             for (i = 0; i < body.features.length; i++) {
                 // access the magnitudes from the properties array
-                anypost(body.features[i].properties.mag);
+                // Max.post(body.features[i].properties.mag);
                 // concat the magnitudes into a string
                 str += body.features[i].properties.mag + " ";
             }
