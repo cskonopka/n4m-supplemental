@@ -2,7 +2,7 @@
   <img width="47%" height="47%" src="https://i.ibb.co/7JYvGQ5/n4m-supplemental.png"/>  
 </p>
 
-# xeno-canto
+# xeno-canto (aka "Rainforest Tools")
 Create a bird sound sample with birds from around the globe using Node-for-Max. The alternate name for the project is "Rainforest Tools"
 
 # Requirements
