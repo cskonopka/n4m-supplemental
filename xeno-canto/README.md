@@ -3,10 +3,10 @@
 </p>
 
 # xeno-canto
-Create a bird sound sample with birds from around the globe using Node-for-Max.
+Create a bird sound sample with birds from around the globe using Node-for-Max. The alternate name for the project is "Rainforest Tools"
 
 # Requirements
-In 2018 the visual programming language [Max](http://www.cycling74.com) made a big leap forward by officially integrating the server-side language Node.js for the release of Max8. [Node-for-Max](https://cycling74.com/articles/node-for-max-intro-%E2%80%93-let%E2%80%99s-get-started) enables users the ability to integrate internet-based sources into their projects using Node.js and ideas can be spunup with ease using [npm](https://www.npmjs.com/). The  connections paves the way for scalability and opens the door to new forms of data research for scientists and artists.
+In 2018 the visual programming language [Max](http://www.cycling74.com) made a big leap forward by officially integrating the server-side language Node.js for the release of Max8. [Node-for-Max](https://cycling74.com/articles/node-for-max-intro-%E2%80%93-let%E2%80%99s-get-started) enables users the ability to integrate internet-based sources into their projects using Node.js and ideas can be spunup with ease using [npm](https://www.npmjs.com/). The connections paves the way for scalability and opens the door to new forms of data research for scientists and artists.
 
 <p align="center">
   <img width="47%" height="47%" src="https://i.ibb.co/4fVj2Sd/xenocanto-01.gif"/>  
@@ -314,7 +314,7 @@ After the process is complete, the *fin* trigger created in the previous section
 
 Press play and create a rainforest in the room.
 
-![gif](https://media.giphy.com/media/dtzBR6aPqkrTy/giphy.gif)
+![](https://i.giphy.com/media/dtzBR6aPqkrTy/giphy.webp)
 
 Create your own rainforest compositions, study the harmonic patterns of regional birds or lay in a hammock scrolling the wilderness, the fun is up to you! 
 
