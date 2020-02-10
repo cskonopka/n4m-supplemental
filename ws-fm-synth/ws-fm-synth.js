@@ -76,7 +76,7 @@ wss.on("connection", function connection(ws, req) {
 	ws.on("message", function incoming(message) {
 		console.log("received: %s", message);
 		Max.outlet(message);
-		anypost(message);
+		// anypost(message);
 	});
 
 	ws.on("close", function stop() {
