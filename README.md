@@ -10,6 +10,8 @@
 <b>A compendium of Node-for-Max projects meant to be a supplement to the main <a href="https://github.com/Cycling74/n4m-examples">n4m-examples</a> repository.</b>
 </br>
 <em>*Note: The repository is constantly under construction.*</em>
+</br>
+<em>*Check back for updates. Currently in the process of documenting each project. If you have ideas for projects post them in Issues. Thank you!*</em>
 </p>
 
 ## Projects
