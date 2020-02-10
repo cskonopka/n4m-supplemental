@@ -16,6 +16,11 @@
 <body>
   </br>
   <div class="container">
+      <div class="row align-items-center">
+          <div class="col col-md-12 text-center">
+            <h1>websocket-fm-synth</h1>
+          </div>
+        </div>
     <div class="row align-items-center">
       <div class="col col-md-12 text-center">
         <div class="btn-group" style="width: 100%;" role="group" aria-label="Basic example">
@@ -34,7 +39,7 @@
 
         <div class="row align-items-center">
           <div class="col col-md-10 text-center">
-            <input id="slider2" type="range" min="0" max="100" value="50" step="1" name="b" />
+              <input id="slider2" type="range" min="0" max="880" value="440" step="1" name="b" />
           </div>
           <div class="col col-md-2 text-center">
             <div id="b"></div>
@@ -43,7 +48,7 @@
 
         <div class="row align-items-center">
           <div class="col col-md-10 text-center">
-            <input id="slider3" type="range" min="0" max="100" value="50" step="1" name="c" />
+            <input id="slider3" type="range" min="0" max="13" value="1" step="0.01" name="c" />
           </div>
           <div class="col col-md-2 text-center">
             <div id="c"></div>
@@ -52,7 +57,7 @@
 
         <div class="row align-items-center">
           <div class="col col-md-10 text-center">
-            <input id="slider4" type="range" min="0" max="100" value="50" step="1" name="d" />
+              <input id="slider4" type="range" min="0" max="880" value="440" step="1" name="d" />
           </div>
           <div class="col col-md-2 text-center">
             <div id="d"></div>
@@ -60,19 +65,18 @@
         </div>
 
         <div class="row align-items-center">
-          
+
           <div class="col col-md-10 text-center">
-            <input id="slider5" type="range" min="0" max="100" value="50" step="1" name="e" />
+              <input id="slider5" type="range" min="0" max="13" value="1" step="0.01" name="e" />
           </div>
           <div class="col col-md-2 text-center">
-            
             <div id="e"></div>
           </div>
         </div>
 
         <div class="row align-items-center">
           <div class="col col-md-10 text-center">
-            <input id="slider6" type="range" min="0" max="100" value="50" step="1" name="f" />
+              <input id="slider6" type="range" min="0" max="880" value="440" step="1" name="f" />
           </div>
           <div class="col col-md-2 text-center">
             <div id="f"></div>
@@ -81,7 +85,7 @@
 
         <div class="row align-items-center">
           <div class="col col-md-10 text-center">
-            <input id="slider7" type="range" min="0" max="100" value="50" step="1" name="g" />
+              <input id="slider7" type="range" min="0" max="13" value="1" step="0.01" name="g" />
           </div>
           <div class="col col-md-2 text-center">
             <div id="g"></div>
@@ -93,5 +97,4 @@
     <script src="/js/mySockets.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
 </body>
-
 </html>

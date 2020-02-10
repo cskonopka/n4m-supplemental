@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <!-- <link rel='stylesheet' href='/css/style.css' /> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  </br>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col col-md-12 text-center">
+        <h1>websocket-sine</h1>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col col-md-12 text-center">
+        <div class="btn-group" style="width: 100%;" role="group" aria-label="Basic example">
+          <button type="button" onclick="send2Max('z 1')" class="btn btn-secondary">ON</button>
+          <button type="button" onclick="send2Max('z 0')" class="btn btn-secondary">OFF</button>
+        </div>
+        <div class="row align-items-center">
+          <div class="col col-md-8 text-center">
+            <input id="slider" type="range" min="0" max="100" value="50" step="1" name="a" />
+          </div>
+          <div class="col col-md-2 text-center">
+            <div>volume</div>
+          </div>
+          <div class="col col-md-2 text-center">
+            <div id="a"></div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col col-md-8 text-center">
+            <input id="slider2" type="range" min="0" max="880" value="440" step="1" name="b" />
+          </div>
+          <div class="col col-md-2 text-center">
+            <div>freq</div>
+          </div>
+          <div class="col col-md-2 text-center">
+            <div id="b"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <script src="/js/mySockets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+</body>
+
+</html>
