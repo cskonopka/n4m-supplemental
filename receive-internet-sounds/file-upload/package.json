@@ -11,7 +11,7 @@
     "debug": "~2.6.3",
     "ejs": "~2.5.6",
     "express": "^4.16.4",
-    "express-fileupload": "^0.3.0",
+    "express-fileupload": "^1.1.9",
     "morgan": "^1.9.1",
     "serve-favicon": "~2.4.2"
   }
