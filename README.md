@@ -1,10 +1,7 @@
 <p align="center">
-  <img width="65%" height="65%" src="https://i.ibb.co/7JYvGQ5/n4m-supplemental.png"/>  
+  <img width="65%" height="65%" src="https://github.com/cskonopka/n4m-supplemental/blob/master/img/n4m-supplemental-logo.png?raw=true"/>  
 </p>
 
-<p align="center">
-  <img width="50%" height="50%" src="https://i.ibb.co/5xvCLDL/n4m-supplemental-enterprise.png"/>  
-</p>
 
 <p align="center">
 <b>A compendium of Node-for-Max projects meant to be a supplement to the main <a href="https://github.com/Cycling74/n4m-examples">n4m-examples</a> repository.</b>
